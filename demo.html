@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AllCities Solar Power+ — Solar &amp; Electrical in Yakima &amp; Central Washington</title>
+<style>
+:root{--ink:#0e1419;--body:#3a444f;--muted:#6c7783;--faint:#98a2ad;--paper:#fff;--ground:#f5f7f9;--panel:#e9edf1;
+--rule:#dce2e8;--rule-2:#c1cad4;--slate:#16303a;--slate-2:#204a58;--soft:#e6eef1;--sun:#bd7a12;--sun-soft:#fbf2e4;
+--shadow:0 1px 2px rgba(14,20,25,.05),0 12px 32px -20px rgba(14,20,25,.34);--shadow-lg:0 2px 4px rgba(14,20,25,.06),0 22px 48px -24px rgba(14,20,25,.4);}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.62 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:600;letter-spacing:-.005em}p{margin:0 0 15px}a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 26px}
+.demo-note{background:var(--sun-soft);border-bottom:1px solid #ecd8b6;color:#784e0c;font-size:13px;text-align:center;padding:9px 20px}
+.topbar{background:var(--slate);color:#fff;font-size:13.5px}
+.topbar .wrap{display:flex;flex-wrap:wrap;gap:6px 24px;align-items:center;justify-content:space-between;padding:9px 26px}
+.topbar .l{color:#b2c8cf;font-size:12.5px}.topbar a{color:#fff;text-decoration:none;font-weight:700}.topbar a:hover{color:#ffcd8c}
+nav{background:var(--paper);border-bottom:1px solid var(--rule);position:sticky;top:0;z-index:40}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;padding-top:13px;padding-bottom:13px}
+.brand{text-decoration:none;line-height:1.15}.brand .bn{font-family:Georgia,serif;font-size:19px;font-weight:700;color:var(--slate);display:block}
+.brand .bs{font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--muted)}
+.navlinks{display:flex;gap:22px;font-size:14.5px}.navlinks a{text-decoration:none;color:var(--body)}.navlinks a:hover{color:var(--slate)}
+@media(max-width:940px){.navlinks{display:none}}
+.btn{display:inline-block;background:var(--sun);color:#fff;text-decoration:none;font-weight:700;padding:11px 20px;border-radius:4px;font-size:14.5px;border:none;cursor:pointer;transition:transform .12s ease,box-shadow .12s ease}
+.btn:hover{transform:translateY(-1px);box-shadow:0 6px 18px -8px rgba(189,122,18,.7)}
+.btn.big{padding:15px 28px;font-size:16px;width:100%}
+.btn.ghost{background:transparent;border:2px solid rgba(255,255,255,.55);color:#fff}.btn.ghost:hover{background:rgba(255,255,255,.1);box-shadow:none}
+.hero{position:relative;background:var(--slate);color:#fff;overflow:hidden}
+.hero .bg{position:absolute;inset:0;background-image:linear-gradient(102deg,rgba(8,22,28,.95) 0%,rgba(8,22,28,.87) 48%,rgba(8,22,28,.5) 100%),url('img/job-1.jpg');background-size:cover;background-position:center 45%}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:50px;padding-top:56px;padding-bottom:56px;align-items:center}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr;gap:30px;padding-top:40px;padding-bottom:40px}}
+.tag{display:inline-block;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.28);color:#fff;font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;font-weight:700;padding:5px 12px;border-radius:3px;margin-bottom:18px}
+.hero h1{font-size:clamp(30px,4.7vw,48px);line-height:1.09;margin:0 0 17px;color:#fff}
+.hero .dek{font-size:18px;color:#c1d4da;max-width:50ch;margin-bottom:21px}
+.hero ul{list-style:none;padding:0;margin:0}
+.hero ul li{padding-left:26px;position:relative;margin-bottom:9px;font-size:15.5px;color:#d8e5e9}
+.hero ul li::before{content:"";position:absolute;left:0;top:8px;width:11px;height:11px;border-left:2.5px solid var(--sun);border-bottom:2.5px solid var(--sun);transform:rotate(-45deg)}
+.card{background:var(--paper);border-radius:8px;box-shadow:var(--shadow-lg);padding:26px;color:var(--ink)}
+.card h3{margin:0 0 4px;font-size:21px}.card .cs{font-size:13.5px;color:var(--muted);margin:0 0 17px;line-height:1.5}
+.fg{margin-bottom:12px}.fg label{display:block;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
+.fg input,.fg select{width:100%;padding:11px 12px;border:1px solid var(--rule-2);border-radius:4px;font-size:15px;font-family:inherit;background:var(--paper);color:var(--ink)}
+.fg input:focus,.fg select:focus{outline:2px solid var(--slate-2);outline-offset:-1px;border-color:var(--slate-2)}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:11px}@media(max-width:420px){.frow{grid-template-columns:1fr}}
+.fnote{font-size:12px;color:var(--faint);margin:11px 0 0;text-align:center;line-height:1.5}
+.trust{background:var(--ground);border-bottom:1px solid var(--rule)}
+.trust .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:20px 30px;padding-top:24px;padding-bottom:24px}
+.ti{text-align:center}.ti b{display:block;font-family:Georgia,serif;font-size:20px;color:var(--slate)}
+.ti span{font-size:12.5px;color:var(--muted);line-height:1.45;display:block;margin-top:3px}
+section{padding:64px 0}section.tint{background:var(--ground);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.eyebrow{font-size:11.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--sun);font-weight:700;margin-bottom:11px}
+h2{font-size:clamp(25px,3.6vw,36px);line-height:1.15;margin:0 0 16px}
+.lede{font-size:17.5px;color:var(--muted);max-width:62ch;margin-bottom:32px}
+.center{text-align:center}.center .lede{margin-left:auto;margin-right:auto}
+.svcs{display:grid;grid-template-columns:repeat(auto-fit,minmax(252px,1fr));gap:18px}
+.svc{background:var(--paper);border:1px solid var(--rule);border-radius:8px;padding:22px 22px 24px;box-shadow:var(--shadow);transition:transform .13s ease,box-shadow .13s ease}
+.svc:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+.svc h3{margin:0 0 8px;font-size:18px}.svc p{font-size:14.5px;color:var(--body);margin:0}
+.svc .ic{width:38px;height:38px;border-radius:5px;background:var(--soft);color:var(--slate);display:flex;align-items:center;justify-content:center;font-weight:700;font-family:Georgia,serif;font-size:17px;margin-bottom:13px}
+.money{background:var(--paper);border:1px solid var(--rule);border-left:4px solid var(--sun);border-radius:0 8px 8px 0;padding:26px 28px;box-shadow:var(--shadow-lg)}
+.money h3{font-size:22px;margin:0 0 12px}
+.slots{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.slot{border:2px dashed var(--rule-2);border-radius:8px;height:190px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px;background:var(--panel)}
+.slot b{font-family:Georgia,serif;font-size:16px;color:var(--slate);margin-bottom:5px}
+.slot span{font-size:12.5px;color:var(--muted);line-height:1.45}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:8px;overflow:hidden}
+.step{background:var(--paper);padding:24px 22px}
+.step .n{width:31px;height:31px;border-radius:50%;background:var(--slate);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;margin-bottom:13px}
+.step h3{font-size:16.5px;margin:0 0 7px}.step p{font-size:14px;color:var(--body);margin:0}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.pills span{background:var(--paper);border:1px solid var(--rule-2);color:var(--body);font-size:13.5px;padding:6px 13px;border-radius:99px}
+.cta{background:var(--slate);color:#fff;position:relative;overflow:hidden}
+.cta .bg{position:absolute;inset:0;opacity:.16;background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.35) 0 2px,transparent 2px 30px)}
+.cta .wrap{position:relative;padding-top:66px;padding-bottom:66px;text-align:center}
+.cta h2{color:#fff}.cta .lede{color:#bed2d8;margin-left:auto;margin-right:auto}
+.ctabtns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:4px}
+footer{background:#081a20;color:#879ba1;font-size:13.5px;padding:42px 0 32px}
+footer .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:28px}
+footer h4{color:#fff;font-size:12px;letter-spacing:.11em;text-transform:uppercase;margin:0 0 12px;font-family:inherit;font-weight:700}
+footer a{color:#b0c4ca;text-decoration:none}footer a:hover{color:#fff}
+footer ul{list-style:none;padding:0;margin:0}footer li{margin-bottom:8px}
+.legal{border-top:1px solid #152c34;margin-top:32px;padding-top:19px;font-size:12.5px;color:#67797f;line-height:1.7}
+.callbar{position:fixed;left:0;right:0;bottom:0;background:var(--sun);z-index:60;display:none}
+.callbar a{display:block;text-align:center;color:#fff;text-decoration:none;font-weight:700;padding:15px;font-size:16.5px}
+@media(max-width:700px){.callbar{display:block}body{padding-bottom:54px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style></head><body>
+
+<div class="demo-note"><strong>Concept demo</strong> &middot; built by AG1 Consulting for Paul Comiskey, 21 August 2026 &middot; one correct phone number throughout, and a page built for the post-credit market</div>
+
+<div class="topbar"><div class="wrap">
+  <span class="l">Yakima &middot; Kittitas &middot; Klickitat &middot; Benton &middot; Franklin Counties</span>
+  <span>Call <a href="tel:+15094067378">(509) 406-7378</a></span>
+</div></div>
+
+<nav><div class="wrap">
+  <a class="brand" href="#top"><span class="bn">AllCities Solar Power+</span><span class="bs">Solar &amp; Electrical &middot; Yakima</span></a>
+  <div class="navlinks"><a href="#numbers">Does it still add up?</a><a href="#services">Services</a><a href="#work">Our work</a><a href="#areas">Areas</a></div>
+  <a class="btn" href="#quote">Free quote</a>
+</div></nav>
+
+<header class="hero" id="top">
+  <div class="bg"></div>
+  <div class="wrap">
+    <div>
+      <span class="tag">Central Washington</span>
+      <h1>The 30% federal credit is gone. Here is what solar actually costs now.</h1>
+      <p class="dek">Every other solar page in Washington still talks about a tax credit that ended on
+      31 December. We would rather show you the real numbers, tell you honestly whether it works for
+      your house, and let you decide.</p>
+      <ul>
+        <li>Residential, commercial, off-grid and grid-tied solar</li>
+        <li>Battery backup and full electrical work in-house</li>
+        <li>Financing available through PSCCU</li>
+      </ul>
+    </div>
+    <div class="card" id="quote">
+      <h3>Get a free quote</h3>
+      <p class="cs">Tell us about the property and your power bill, and we will come back with real
+      numbers for your situation.</p>
+      <form onsubmit="event.preventDefault();this.innerHTML='<div style=&quot;text-align:center;padding:32px 8px&quot;><div style=&quot;font-family:Georgia,serif;font-size:21px;color:#16303a;margin-bottom:8px&quot;>Thank you.</div><p style=&quot;color:#6c7783;font-size:14.5px;margin:0&quot;>Demonstration form. On the live site this would reach Paul by email and text within seconds — the current site has no form at all.</p></div>';">
+        <div class="fg"><label for="job">What are you looking at?</label>
+          <select id="job" required><option value="">Please select…</option>
+          <option>Residential solar</option><option>Commercial solar</option>
+          <option>Battery backup / storage</option><option>Off-grid system</option>
+          <option>Electrical work</option><option>Repair to an existing system</option>
+          <option>Just want honest advice</option></select></div>
+        <div class="frow">
+          <div class="fg"><label for="bill">Average power bill</label><select id="bill" required><option value="">Select…</option>
+          <option>Under $100/mo</option><option>$100–$200/mo</option><option>$200–$350/mo</option><option>Over $350/mo</option></select></div>
+          <div class="fg"><label for="own">Property</label><select id="own" required><option value="">Select…</option>
+          <option>I own my home</option><option>Renting</option><option>Business premises</option><option>Land / off-grid site</option></select></div>
+        </div>
+        <div class="frow">
+          <div class="fg"><label for="nm">Name</label><input id="nm" type="text" required></div>
+          <div class="fg"><label for="ph">Phone</label><input id="ph" type="tel" required></div>
+        </div>
+        <div class="fg"><label for="zip">ZIP code</label><input id="zip" type="text" placeholder="98903" required></div>
+        <button class="btn big" type="submit">Request free quote</button>
+        <p class="fnote">Or call (509) 406-7378 — Mon–Fri 8am–4pm, weekends by appointment.</p>
+      </form>
+    </div>
+  </div>
+</header>
+
+<div class="trust"><div class="wrap">
+  <div class="ti"><b>5 counties</b><span>Yakima, Kittitas, Klickitat, Benton, Franklin</span></div>
+  <div class="ti"><b>Electrical</b><span>Full electrical work in-house</span></div>
+  <div class="ti"><b>Financing</b><span>Available through PSCCU</span></div>
+  <div class="ti"><b>Free</b><span>Quotes and consultations</span></div>
+</div></div>
+
+<section id="numbers">
+  <div class="wrap">
+    <div class="eyebrow">Straight talk</div>
+    <h2>Does solar still make sense without the 30%?</h2>
+    <div class="money">
+      <h3>Sometimes yes. Sometimes no. We will tell you which.</h3>
+      <p><strong>What changed:</strong> the federal residential clean energy credit — Section 25D —
+      ended for systems placed in service after 31 December 2025. There is no 30% federal credit on a
+      residential system in 2026.</p>
+      <p><strong>What did not change:</strong> your power bill, net metering with your utility, the
+      cost of equipment, and the fact that a system you own outright still produces free electricity
+      for twenty-five years.</p>
+      <p><strong>What that means in practice:</strong> the payback period is longer than it was in
+      2025. For some houses it still works comfortably. For others it now does not, and
+      <strong>we would rather tell you that on the phone than sell you a system you regret.</strong></p>
+      <p style="margin-bottom:0">Commercial solar sits under different rules again, so if this is for a
+      business the picture may be better than you expect. Ask us and we will walk you through it.</p>
+      <div style="margin-top:20px"><a class="btn" href="#quote">Get real numbers for my house</a></div>
+    </div>
+    <p style="font-size:13.5px;color:var(--muted);margin-top:16px">We are solar installers, not tax
+    advisers. Confirm any credit, rebate or incentive position with your own accountant before you
+    commit.</p>
+  </div>
+</section>
+
+<section class="tint" id="services">
+  <div class="wrap">
+    <div class="eyebrow">What we do</div>
+    <h2>Solar and the electrical work behind it.</h2>
+    <p class="lede">Most solar companies subcontract the electrical. We do it ourselves, which is why
+    we can take on off-grid, battery and commercial work others turn down.</p>
+    <div class="svcs">
+      <div class="svc"><div class="ic">1</div><h3>Residential solar</h3><p>Roof and ground-mount systems designed around your actual usage and your utility, not a sales target.</p></div>
+      <div class="svc"><div class="ic">2</div><h3>Commercial solar</h3><p>Systems for business premises, agricultural buildings and warehouses across Central Washington. Different incentive rules apply — ask us.</p></div>
+      <div class="svc"><div class="ic">3</div><h3>Battery backup</h3><p>Storage so the lights stay on when the grid does not. Increasingly the main reason people call us.</p></div>
+      <div class="svc"><div class="ic">4</div><h3>Off-grid systems</h3><p>Complete off-grid power for properties with no utility connection. Common on rural Central Washington land.</p></div>
+      <div class="svc"><div class="ic">5</div><h3>Grid-tied systems</h3><p>Standard grid-tied installations with net metering, permitting and utility interconnection handled for you.</p></div>
+      <div class="svc"><div class="ic">6</div><h3>Electrical work</h3><p>Panel upgrades, service work and everything a solar install actually needs underneath it.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="eyebrow">Our work</div>
+    <h2>Systems across Central Washington.</h2>
+    <p class="lede">The current site has almost no photography, and one of the images on it is licensed
+    stock. These slots are for your own installs — they are worth more than any stock photograph.</p>
+    <div class="slots" style="margin-bottom:14px">
+      <div class="slot"><b>Residential roof array</b><span>Finished system on a Yakima home, with the kW size</span></div>
+      <div class="slot"><b>Ground mount</b><span>Rural install — the shot that sells to acreage owners</span></div>
+      <div class="slot"><b>Battery / off-grid</b><span>Inverter and battery bank. Nobody else shows this</span></div>
+      <div class="slot"><b>Commercial install</b><span>Scale shot for agricultural and warehouse buyers</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="tint">
+  <div class="wrap">
+    <div class="eyebrow">How it works</div>
+    <h2>Four steps and honest numbers.</h2>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>Tell us your bill</h3><p>Your usage and your utility tell us most of what we need before we visit.</p></div>
+      <div class="step"><div class="n">2</div><h3>Site assessment</h3><p>Roof, orientation, shade, panel and service. The electrical side checked properly.</p></div>
+      <div class="step"><div class="n">3</div><h3>Real numbers</h3><p>System size, cost, financing, and an honest payback figure for 2026 rather than 2025.</p></div>
+      <div class="step"><div class="n">4</div><h3>Install and interconnect</h3><p>Permitting, installation and utility interconnection handled end to end.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="areas">
+  <div class="wrap">
+    <div class="eyebrow">Areas we serve</div>
+    <h2>Five counties across Central Washington.</h2>
+    <div class="pills">
+      <span>Yakima</span><span>Selah</span><span>Union Gap</span><span>Naches</span><span>Zillah</span>
+      <span>Sunnyside</span><span>Grandview</span><span>Ellensburg</span><span>Cle Elum</span>
+      <span>Goldendale</span><span>White Salmon</span><span>Richland</span><span>Kennewick</span>
+      <span>Pasco</span><span>Prosser</span><span>Toppenish</span>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="bg"></div>
+  <div class="wrap">
+    <h2>Find out if solar still works for your house.</h2>
+    <p class="lede">Free quote, real 2026 numbers, and an honest answer if it does not stack up.</p>
+    <div class="ctabtns"><a class="btn" href="#quote">Get a free quote</a>
+      <a class="btn ghost" href="tel:+15094067378">Call (509) 406-7378</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><h4>AllCities Solar Power+</h4><p style="margin:0 0 8px">Solar panel installation, battery backup, off-grid, grid-tied and electrical work across Yakima, Kittitas, Klickitat, Benton and Franklin counties.</p></div>
+    <div><h4>Services</h4><ul><li><a href="#services">Residential solar</a></li><li><a href="#services">Commercial solar</a></li>
+      <li><a href="#services">Battery backup</a></li><li><a href="#services">Off-grid systems</a></li></ul></div>
+    <div><h4>Areas</h4><ul><li>Yakima County</li><li>Kittitas &amp; Ellensburg</li><li>Benton &amp; Franklin</li><li>Klickitat</li></ul></div>
+    <div><h4>Contact</h4><ul><li><a href="tel:+15094067378">(509) 406-7378</a></li>
+      <li><a href="mailto:paul@acsolarpros.com">paul@acsolarpros.com</a></li>
+      <li>2014 S 1st St, Yakima, WA 98903</li><li>Mon–Fri 8am–4pm · Weekends by appointment</li></ul></div>
+  </div>
+  <div class="wrap"><div class="legal">
+    Concept demonstration produced by AG1 Consulting on 21 August 2026 for discussion with Paul
+    Comiskey. <strong>One phone number — (509) 406-7378 — is used consistently throughout, including
+    in every tap-to-call link.</strong> The current site displays this number but links a different
+    one. Tax and incentive statements are general and drawn from public reporting of Section 25D; they
+    are not tax advice and should be confirmed with an accountant. Photograph slots are deliberately
+    empty pending your own install photography. Not a live website.
+  </div></div>
+</footer>
+<div class="callbar"><a href="tel:+15094067378">Call AllCities Solar &middot; (509) 406-7378</a></div>
+</body></html>
