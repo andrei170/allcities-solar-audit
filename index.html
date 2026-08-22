@@ -1,238 +1,217 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AllCities Solar Power+ — Online Presence Audit</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AllCities Solar Power+ — Digital Presence Audit</title>
 <style>
-:root{--ink:#11161c;--body:#3b4550;--muted:#6c7783;--faint:#98a2ad;--paper:#fff;--ground:#f4f6f8;--panel:#eceff3;
---rule:#dde2e8;--rule-2:#c2cad4;--slate:#1e3a34;--f:#b3261e;--f-soft:#fbeae9;--d:#b0670a;--d-soft:#fdf1e0;
---c:#8a7407;--c-soft:#fbf5dd;--a:#1a6444;--a-soft:#e3f0ea;--shadow:0 1px 2px rgba(17,22,28,.05),0 10px 28px -18px rgba(17,22,28,.3);}
-*{box-sizing:border-box}body{margin:0;background:var(--ground);color:var(--ink);font:16px/1.62 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
-.wrap{max-width:940px;margin:0 auto;padding:0 24px 84px}h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:600}p{margin:0 0 14px}
-.mast{padding:50px 0 0}.eyebrow{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--slate);font-weight:700}
-h1{font-size:clamp(31px,5.2vw,48px);line-height:1.07;margin:13px 0 0;letter-spacing:-.01em}
-.sub{color:var(--muted);font-size:17px;margin:14px 0 0;max-width:62ch}
-.meta{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:19px;font-size:12.5px;color:var(--faint)}.meta b{color:var(--body);font-weight:600}
-.grade{display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:center;background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:26px 28px;margin:28px 0 0;box-shadow:var(--shadow)}
-@media(max-width:600px){.grade{grid-template-columns:1fr;gap:16px}}
-.badge{width:116px;height:116px;border-radius:6px;background:var(--f-soft);border:2px solid var(--f);display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--f)}
-.badge .g{font-family:Georgia,serif;font-size:52px;line-height:1;font-weight:700}.badge .s{font-size:12px;letter-spacing:.06em;margin-top:5px;font-weight:700}
-.grade h2{margin:0 0 8px;font-size:22px}.grade p{margin:0;color:var(--body);font-size:15px}
-.finds{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:6px;margin:22px 0 0;overflow:hidden}
-.find{background:var(--paper);padding:18px}.find .n{font-family:Georgia,serif;font-size:26px;line-height:1.1;color:var(--f);font-weight:700}
-.find .n.ok{color:var(--a)}.find .l{font-size:13px;color:var(--body);margin-top:8px;line-height:1.45}
-section{margin-top:50px}.sec-h{border-top:2px solid var(--ink);padding-top:12px;margin-bottom:6px}h2.sec{font-size:clamp(21px,3vw,27px);margin:0}
-.lede{color:var(--muted);font-size:16px;margin:8px 0 20px;max-width:66ch}
-.shot{background:#1b2028;border-radius:6px;padding:20px 22px;margin:18px 0;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:13px;color:#dfe5ec;line-height:1.9;overflow-x:auto}
-.shot .lbl{font-family:-apple-system,sans-serif;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:#7d8894;font-weight:700;margin-bottom:11px;display:block}
-.shot .ph{background:#4a1f1c;color:#ff9d94;padding:2px 7px;border-radius:3px;font-weight:600}
-.shot .ok{background:#12331f;color:#84e0a8;padding:2px 7px;border-radius:3px;font-weight:600}
-.tw{overflow-x:auto;border:1px solid var(--rule);border-radius:6px;background:var(--paper);box-shadow:var(--shadow)}
-table{border-collapse:collapse;width:100%;min-width:640px;font-size:14.5px}
-th{background:var(--panel);text-align:left;padding:11px 14px;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);font-weight:700;border-bottom:1px solid var(--rule-2)}
-td{padding:13px 14px;border-bottom:1px solid var(--rule);vertical-align:top;line-height:1.5}tbody tr:last-child td{border-bottom:none}
-td.cat{font-weight:600;width:22%}td.sc{width:70px;white-space:nowrap;font-weight:700;font-variant-numeric:tabular-nums}
-.pill{display:inline-block;font-size:11.5px;font-weight:700;padding:2px 8px;border-radius:3px}
-.p-f{background:var(--f-soft);color:var(--f)}.p-d{background:var(--d-soft);color:var(--d)}.p-c{background:var(--c-soft);color:var(--c)}.p-a{background:var(--a-soft);color:var(--a)}
-.call{background:var(--paper);border:1px solid var(--rule);border-left:4px solid var(--f);border-radius:0 6px 6px 0;padding:20px 22px;margin:22px 0;box-shadow:var(--shadow)}
-.call.good{border-left-color:var(--a)}.call.slate{border-left-color:var(--slate)}
-.call-l{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--f);display:block;margin-bottom:8px}
-.call.good .call-l{color:var(--a)}.call.slate .call-l{color:var(--slate)}.call p:last-child{margin-bottom:0}
-code{background:var(--panel);padding:1.5px 6px;border-radius:3px;font-size:13px;font-family:ui-monospace,Consolas,monospace;color:var(--slate)}
-ul{margin:0 0 16px;padding-left:22px}li{margin-bottom:9px}strong{font-weight:650}
-.pri{counter-reset:p;margin:20px 0 0;padding:0;list-style:none}
-.pri li{counter-increment:p;position:relative;padding:16px 18px 16px 58px;background:var(--paper);border:1px solid var(--rule);border-radius:6px;margin-bottom:10px;box-shadow:var(--shadow)}
-.pri li::before{content:counter(p);position:absolute;left:17px;top:16px;width:26px;height:26px;background:var(--slate);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;font-family:-apple-system,sans-serif}
-.pri h4{margin:0 0 5px;font-size:16px;font-family:Georgia,serif}.pri p{margin:0;font-size:14px;color:var(--body)}
-footer{margin-top:58px;padding-top:20px;border-top:2px solid var(--ink);font-size:12.5px;color:var(--faint);line-height:1.75}
-</style></head><body><div class="wrap">
-
-<header class="mast">
-  <div class="eyebrow">Online Presence Audit &middot; Prepared 21 August 2026</div>
-  <h1>AllCities Solar Power+</h1>
-  <p class="sub">The residential solar tax credit ended on 31 December 2025 and it has hit every
-  installer in the country. This is a review of what that means for your market specifically, and of
-  three things on your website that are costing you the enquiries still out there.</p>
-  <div class="meta"><span><b>Prepared for</b> Paul Comiskey</span><span><b>Yakima, Washington</b></span>
-  <span><b>Reviewed</b> allcitiessolar.net</span><span><b>By</b> AG1 Consulting</span></div>
+  :root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--mut:#9aa7b4;--line:#2a3340;--accent:#2f81f7;
+    --good:#3fb950;--bad:#f85149;--gradF:#f85149;--gradD:#e8702a;--gradC:#d29922;--gradB:#3fb950;--gradA:#2ea043;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+  .eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--mut);font-weight:600}
+  header{padding:46px 0 28px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 400px at 70% -10%,rgba(47,129,247,.18),transparent)}
+  h1{font-size:30px;font-weight:800;margin:10px 0 6px;letter-spacing:-.01em}
+  .sub{color:var(--mut);font-size:15px}
+  .hero{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin:34px 0 8px}
+  @media(max-width:760px){.hero{grid-template-columns:1fr}}
+  .gradecard{background:linear-gradient(160deg,#2a1410,#1c2330);border:1px solid var(--line);border-radius:18px;padding:26px;text-align:center;position:relative;overflow:hidden}
+  .gradecard:before{content:"";position:absolute;inset:0;background:radial-gradient(300px 160px at 50% 0,rgba(248,81,73,.22),transparent)}
+  .bigletter{font-size:96px;font-weight:900;line-height:1;color:var(--gradF);position:relative;text-shadow:0 0 40px rgba(248,81,73,.45)}
+  .score100{font-size:18px;color:var(--mut);margin-top:6px;position:relative}
+  .heroread h2{font-size:21px;font-weight:800;margin-bottom:10px}
+  .heroread p{color:var(--mut);font-size:15.5px}
+  .heroread .tag{display:inline-block;margin-top:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--ink);background:var(--panel)}
+  section{padding:34px 0;border-bottom:1px solid var(--line)}
+  .h{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:18px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media(max-width:760px){.grid{grid-template-columns:1fr}}
+  .row{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+  .rname{font-weight:600;font-size:15px}
+  .bar{height:7px;background:#0b0f15;border-radius:99px;margin-top:9px;overflow:hidden}
+  .fill{height:100%;border-radius:99px}
+  .badge{font-weight:800;font-size:15px;min-width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#0d1117}
+  .gF{background:var(--gradF)}.gD{background:var(--gradD)}.gC{background:var(--gradC)}.gB{background:var(--gradB);color:#06210f}.gA{background:var(--gradA);color:#06210f}
+  .sc{font-size:12px;color:var(--mut);margin-top:3px}
+  .flag{background:linear-gradient(160deg,#2a1410,#161b22);border:1px solid #6f2a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+  .flag .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--bad);font-weight:700;margin-bottom:8px}
+  .flag p{color:var(--mut);font-size:14.5px;margin-bottom:9px}.flag p:last-child{margin-bottom:0}.flag b{color:var(--ink)}
+  .code{background:#0b0f15;border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:13px;line-height:1.9;color:var(--mut)}
+  .code .ph{color:#ff9d94;font-weight:700}.code .ok{color:#84e0a8;font-weight:700}
+  .cmp{width:100%;border-collapse:collapse;font-size:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  .cmp th{text-align:left;padding:11px 14px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);border-bottom:1px solid var(--line);font-weight:700}
+  .cmp td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--mut);vertical-align:top}
+  .cmp tr:last-child td{border-bottom:none}.cmp td b{color:var(--ink)}.cmp tr.you td{background:#2a1410}
+  .opp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  @media(max-width:760px){.opp{grid-template-columns:1fr}}
+  .ocard{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px;text-align:center}
+  .ocard .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
+  .ocard .big{font-size:30px;font-weight:900;color:var(--good);margin:8px 0 2px}
+  .ocard .small{font-size:13px;color:var(--mut)}
+  .oppnote{color:var(--mut);font-size:14px;margin-top:14px}.oppnote b{color:var(--ink)}
+  .arrow{display:flex;align-items:center;justify-content:center;gap:18px;margin:6px 0 2px;flex-wrap:wrap}
+  .pill{font-size:60px;font-weight:900;line-height:1}
+  .pill.from{color:var(--gradF)}.pill.to{color:var(--gradA)}
+  .pilllab{font-size:12px;color:var(--mut);text-align:center;text-transform:uppercase;letter-spacing:.1em}
+  .ar{font-size:34px;color:var(--mut)}
+  ul.road{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  @media(max-width:760px){ul.road{grid-template-columns:1fr}}
+  ul.road li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:11px 14px;font-size:14.5px}
+  .road2 li{border-left-color:var(--good)}
+  .cta{text-align:center;padding:40px 0 56px}
+  .cta h2{font-size:22px;font-weight:800;margin-bottom:8px}
+  .cta p{color:var(--mut);font-size:15px}
+  footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;line-height:1.7}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Digital Presence Audit</div>
+    <h1>AllCities Solar Power+</h1>
+    <div class="sub">Yakima, WA &nbsp;·&nbsp; Website, Conversion, Reputation, Measurement &amp; Post-Credit Positioning</div>
+  </div>
 </header>
 
-<div class="grade">
-  <div class="badge"><div class="g">F</div><div class="s">31 / 100</div></div>
-  <div>
-    <h2>Your tap-to-call button dials the wrong number.</h2>
-    <p>Your website displays <strong>509-406-7378</strong>. The button underneath it is coded to call
-    <strong>509-248-2530</strong> &mdash; the number from the previous era of the business. On a phone,
-    the customer taps to call you and reaches a different line. There is also no enquiry form anywhere
-    on the site.</p>
+<div class="wrap">
+
+  <div class="hero">
+    <div class="gradecard">
+      <div class="eyebrow" style="position:relative">Overall Grade</div>
+      <div class="bigletter">F</div>
+      <div class="score100">31 / 100</div>
+    </div>
+    <div class="heroread">
+      <h2>Your tap-to-call button dials the wrong number.</h2>
+      <p>The site displays one number and the button underneath it calls another — the line from the
+      previous era of the business. There is also no enquiry form anywhere on the site. In a year where
+      every lead counts, these are the two most expensive small things you own.</p>
+      <span class="tag">Analytics installed &nbsp;•&nbsp; Broken contact path</span>
+    </div>
   </div>
+
+  <section>
+    <div class="h">The Finding That Matters Most</div>
+    <div class="flag">
+      <div class="lab">Two different phone numbers on one page</div>
+      <div class="code">
+        Displayed on screen: <span class="ok">509-406-7378</span><br>
+        Wired into the tap-to-call link: <span class="ph">tel:+1 509 248 2530</span>
+      </div>
+      <p><b>509-248-2530 is the number from the earlier era of this business</b> — still listed on the
+      old GuildQuality profile alongside the allcitiessolar.com domain.</p>
+      <p>A homeowner reads one number and, if they tap rather than type, dials another. Some of those
+      calls connect somewhere you are not, and <b>you would never know they happened.</b></p>
+      <p><b>And there is no form.</b> Solar gets researched in the evening. Someone comparing quotes at
+      nine at night can do nothing on your site but write a number down and intend to ring tomorrow.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">Your Market — Why This Year Is Not Your Fault</div>
+    <p class="oppnote" style="margin-top:0">The One Big Beautiful Bill, signed <b>4 July 2025</b>,
+    terminated <b>Section 25D — the 30% residential clean energy credit — for any system placed in
+    service after 31 December 2025.</b> Not reduced. Ended. Every residential quote you write in 2026 is
+    effectively 30% more expensive to the customer, and Q4 2025 pulled a chunk of this year's demand
+    forward on top. <b>This is industry-wide. You were not outcompeted.</b></p>
+    <p class="oppnote"><b>Worth checking before the call:</b> commercial solar did not end the same way
+    — those credits ran on different rules. You already sell commercial, battery storage and electrical
+    work. That may be the only part of your business with a federal incentive still attached. Confirm
+    the current position with your accountant.</p>
+    <p class="oppnote"><b>And one fact that belongs on your website:</b> Yakima gets over 152 sunny days
+    a year and averages 6–7 hours of usable sunlight daily. With the credit gone, the argument shifts
+    from "there's 30% off" to "your roof actually produces". That number is your argument and it is
+    nowhere on the site.</p>
+  </section>
+
+  <section>
+    <div class="h">The Scorecard — 12 Categories</div>
+    <div class="grid">
+      <div class="row"><div><div class="rname">Contact Accuracy</div><div class="bar"><div class="fill" style="width:10%;background:var(--gradF)"></div></div><div class="sc">Displayed number and tap-to-call number do not match</div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Conversion &amp; Lead Capture</div><div class="bar"><div class="fill" style="width:5%;background:var(--gradF)"></div></div><div class="sc">No enquiry form anywhere on the site</div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Tracking &amp; Measurement</div><div class="bar"><div class="fill" style="width:60%;background:var(--gradC)"></div></div><div class="sc">GA4 installed correctly; no conversion or call tracking</div></div><div class="badge gC">C</div></div>
+      <div class="row"><div><div class="rname">Reviews &amp; Reputation</div><div class="bar"><div class="fill" style="width:20%;background:var(--gradF)"></div></div><div class="sc">No rating shown; visible reviews stop in 2019</div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Third-Party Standing</div><div class="bar"><div class="fill" style="width:20%;background:var(--gradF)"></div></div><div class="sc">BBB B− with accreditation revoked over one unanswered complaint</div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Proof of Work</div><div class="bar"><div class="fill" style="width:30%;background:var(--gradF)"></div></div><div class="sc">No project gallery, system sizes or output figures</div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Credentials Displayed</div><div class="bar"><div class="fill" style="width:30%;background:var(--gradF)"></div></div><div class="sc">No licence number, certification or insurance shown</div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Service Range</div><div class="bar"><div class="fill" style="width:70%;background:var(--gradB)"></div></div><div class="sc">Residential, commercial, off-grid, battery + electrical in-house</div></div><div class="badge gB">B-</div></div>
+      <div class="row"><div><div class="rname">Financing Presentation</div><div class="bar"><div class="fill" style="width:50%;background:var(--gradC)"></div></div><div class="sc">PSCCU mentioned in passing — now the whole argument</div></div><div class="badge gC">C</div></div>
+      <div class="row"><div><div class="rname">Local SEO</div><div class="bar"><div class="fill" style="width:40%;background:var(--gradD)"></div></div><div class="sc">Five counties named, no individual city pages</div></div><div class="badge gD">D</div></div>
+      <div class="row"><div><div class="rname">Brand Continuity</div><div class="bar"><div class="fill" style="width:30%;background:var(--gradD)"></div></div><div class="sc">"Since 1979" heritage sits on a different number and domain</div></div><div class="badge gD">D-</div></div>
+      <div class="row"><div><div class="rname">Platform &amp; Speed</div><div class="bar"><div class="fill" style="width:70%;background:var(--gradB)"></div></div><div class="sc">Squarespace, clean and fast — foundation is fine</div></div><div class="badge gB">B-</div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">Where You Sit — Central Washington</div>
+    <table class="cmp">
+      <tr><th>Firm</th><th>Public position</th><th>Notes</th></tr>
+      <tr><td><b>Purelight Power</b></td><td><b>4.9 average on Google</b></td><td>Multi-state operator marketing into Yakima County</td></tr>
+      <tr><td><b>Smart Solar Energy</b></td><td><b>EnergySage 2024 Local Installer of the Year</b></td><td>Family-owned residential specialist</td></tr>
+      <tr><td><b>Solora Solar</b></td><td>3.0 on one aggregator</td><td>Local</td></tr>
+      <tr class="you"><td><b>AllCities Solar Power+</b></td><td><b>No rating or review count displayed anywhere</b></td><td>Five counties, plus in-house electrical</td></tr>
+    </table>
+    <p class="oppnote">Directory figures read 21 August 2026, not independently verified.</p>
+  </section>
+
+  <section>
+    <div class="h">The Opportunity in Numbers</div>
+    <div class="opp">
+      <div class="ocard"><div class="lab">Conservative · +1 install/mo</div><div class="big">~$360k</div><div class="small">added revenue / year</div></div>
+      <div class="ocard"><div class="lab">Moderate · +2 installs/mo</div><div class="big">~$720k</div><div class="small">added revenue / year</div></div>
+      <div class="ocard"><div class="lab">Strong · +3 installs/mo</div><div class="big">~$1.08M</div><div class="small">added revenue / year</div></div>
+    </div>
+    <p class="oppnote">Based on a <b>$30,000 average install</b> — Eastern Washington systems typically
+    run 8–12 kW at $3.00–$3.50 per watt. Not a guarantee, and these are revenue figures (solar installers
+    net roughly 5–10%). Estimated normal-year turnover <b>$2M–$3M</b> across nine staff; 2026 realistically
+    <b>$1M–$1.8M</b> given the credit change. <b>Fixing the phone link and adding a form costs nothing</b>
+    and recovers leads you are currently losing silently.</p>
+  </section>
+
+  <section>
+    <div class="h">Projected Grade After Build</div>
+    <div class="arrow">
+      <div><div class="pill from">F</div><div class="pilllab">Today · 31/100</div></div>
+      <div class="ar">→</div>
+      <div><div class="pill to">A-</div><div class="pilllab">After build · 86–89/100</div></div>
+    </div>
+    <p class="oppnote" style="text-align:center">Four of the five F grades are plumbing, not strategy.
+    Analytics is already installed, which is the piece most contractors are missing.</p>
+  </section>
+
+  <section>
+    <div class="h">Priority Roadmap — Fix First</div>
+    <ul class="road">
+      <li>Correct the tap-to-call number — ten minutes in Squarespace</li>
+      <li>Answer the outstanding BBB complaint and restore accreditation</li>
+      <li>Put a real enquiry form on the site with roof, bill and ownership fields</li>
+      <li>Publish licence, certification and insurance detail</li>
+    </ul>
+    <div class="h" style="margin-top:24px">Build Next — Compounding Growth</div>
+    <ul class="road road2">
+      <li>Get current Google reviews under the current business</li>
+      <li>Lead with financing and the 152-sunny-day figure, not the dead credit</li>
+      <li>Build a project gallery with system sizes and output</li>
+      <li>City pages across the five counties you already cover</li>
+    </ul>
+  </section>
+
+  <div class="cta">
+    <h2>The credit is gone. The demand is not.</h2>
+    <p>Every competitor's page still argues for a tax credit that ended in December. The first one to
+    tell homeowners the truth about 2026 numbers owns that conversation.</p>
+  </div>
+
 </div>
-
-<div class="finds">
-  <div class="find"><div class="n">2</div><div class="l">Different phone numbers on one page — one shown to the eye, another wired to the button</div></div>
-  <div class="find"><div class="n">0</div><div class="l">Enquiry forms on the entire website. Every lead has to phone you</div></div>
-  <div class="find"><div class="n">B&minus;</div><div class="l">BBB rating, with accreditation revoked for not responding to one complaint</div></div>
-  <div class="find"><div class="n ok">GA4</div><div class="l">Analytics correctly installed, which puts you ahead of most contractors we audit</div></div>
-</div>
-
-<section>
-  <div class="sec-h"><h2 class="sec">Start here: the button problem</h2></div>
-  <div class="call">
-    <span class="call-l">From your live page source, 21 August 2026</span>
-    <div class="shot"><span class="lbl">allcitiessolar.net</span>
-      Displayed on screen: <span class="ok">509-406-7378</span><br>
-      Wired into the tap-to-call link: <span class="ph">tel:+1 509 248 2530</span></div>
-    <p><strong>509-248-2530 is the number attached to the earlier era of this business</strong> — it
-    is the number still listed on your old GuildQuality profile alongside the allcitiessolar.com
-    domain.</p>
-    <p>So a homeowner in Yakima reads one number and, if they tap rather than type, dials another. Some
-    of those calls will connect somewhere you are not, and you will never know they happened. In a year
-    where every enquiry counts, this is the most expensive small thing on your website.</p>
-  </div>
-
-  <div class="call">
-    <span class="call-l">And there is no form</span>
-    <p>We checked every page. <strong>There is no enquiry form anywhere on allcitiessolar.net.</strong>
-    "FREE quote" appears as a call to action, but the only route to you is the phone.</p>
-    <p>Solar is researched in the evening. Someone comparing quotes at nine at night cannot do anything
-    with your site except write your number down and intend to ring tomorrow, which many of them will
-    not do.</p>
-  </div>
-</section>
-
-<section>
-  <div class="sec-h"><h2 class="sec">Your market, and why this year is not your fault</h2></div>
-  <p class="lede">You said the tax credit removal hurt. Here is the size of it, verified.</p>
-
-  <div class="call slate">
-    <span class="call-l">What actually changed</span>
-    <p>The One Big Beautiful Bill was signed on <strong>4 July 2025</strong>. It terminated
-    <strong>Section 25D — the 30% residential clean energy credit — for any system placed in service
-    after 31 December 2025.</strong> Not reduced. Ended. There is no residential federal credit in
-    2026.</p>
-    <p>Two effects landed together. <strong>Every residential quote you write in 2026 is effectively
-    30% more expensive to the customer</strong> than the identical quote in December. And Q4 2025 was a
-    nationwide scramble to get systems installed and utility permission to operate before the deadline
-    — so this year's demand was partly spent in advance.</p>
-    <p><strong>This is industry-wide. You were not outcompeted.</strong></p>
-  </div>
-
-  <p><strong>What that means for the conversation.</strong> There is no marketing that restores a 30%
-  price cut. What marketing can do is win a larger share of the enquiries that still exist, and make
-  sure none of them are lost to a wrong phone number or a missing form.</p>
-
-  <div class="call good">
-    <span class="call-l">The question worth answering on the call</span>
-    <p><strong>Commercial solar did not end the same way.</strong> The residential 25D credit is gone,
-    but the commercial-side credits ran on different rules and timelines. You already sell commercial
-    solar, battery storage and electrical work.</p>
-    <p>That may be the only part of your business with a federal incentive still attached. It is worth
-    knowing what share of your revenue it is and whether it can be grown, <strong>before</strong>
-    anyone spends money advertising residential.</p>
-    <p>Confirm the current commercial position with your accountant — incentive rules have moved fast
-    and we would not want you acting on our summary of them.</p>
-  </div>
-</section>
-
-<section>
-  <div class="sec-h"><h2 class="sec">The scorecard</h2></div>
-  <div class="tw"><table>
-    <thead><tr><th>Category</th><th>Score</th><th>Grade</th><th>What we found</th></tr></thead><tbody>
-    <tr><td class="cat">Contact accuracy</td><td class="sc">1/10</td><td><span class="pill p-f">F</span></td>
-    <td>The displayed number and the tap-to-call number are different. This is the highest-priority fix on the site.</td></tr>
-    <tr><td class="cat">Lead capture</td><td class="sc">0/10</td><td><span class="pill p-f">F</span></td>
-    <td>No enquiry form anywhere. Phone only, in a category people research at night.</td></tr>
-    <tr><td class="cat">Measurement</td><td class="sc">6/10</td><td><span class="pill p-c">C</span></td>
-    <td><strong>Better than most.</strong> GA4 installed correctly (<code>G-7DWRQN9VKJ</code>). No conversion tracking or call tracking, so you can see visits but not what they lead to.</td></tr>
-    <tr><td class="cat">Reviews and reputation</td><td class="sc">2/10</td><td><span class="pill p-f">F</span></td>
-    <td>No rating or review count displayed anywhere on the site. Your GuildQuality profile holds 4.8 from 16 reviews but they all date from April to June 2019 and sit under the previous phone number and domain.</td></tr>
-    <tr><td class="cat">Third-party standing</td><td class="sc">2/10</td><td><span class="pill p-f">F</span></td>
-    <td><strong>Worth addressing directly.</strong> BBB rating is B&minus; and accreditation is shown as revoked, with the stated reason being failure to respond to one complaint. A single unanswered complaint is a cheap thing to fix and an expensive thing to leave.</td></tr>
-    <tr><td class="cat">Proof of work</td><td class="sc">3/10</td><td><span class="pill p-d">D</span></td>
-    <td>No project gallery, no case studies, no system sizes or output figures. In solar, showing real installs with kW and savings is most of the sell.</td></tr>
-    <tr><td class="cat">Credentials</td><td class="sc">3/10</td><td><span class="pill p-d">D</span></td>
-    <td>No licence number, no NABCEP certification, no insurance detail displayed. Solar buyers are told repeatedly to check all three.</td></tr>
-    <tr><td class="cat">Service range</td><td class="sc">7/10</td><td><span class="pill p-c">B&minus;</span></td>
-    <td><strong>Genuinely broad.</strong> Residential, commercial, off-grid, grid-tied, battery backup and electrical work across five counties. The electrical capability in particular is a differentiator.</td></tr>
-    <tr><td class="cat">Financing presentation</td><td class="sc">5/10</td><td><span class="pill p-c">C</span></td>
-    <td>PSCCU financing is mentioned. With the federal credit gone, financing is now a much bigger part of the decision and deserves far more prominence than a passing reference.</td></tr>
-    <tr><td class="cat">Local search</td><td class="sc">4/10</td><td><span class="pill p-d">D</span></td>
-    <td>Yakima, Kittitas, Klickitat, Benton and Franklin counties are named. No individual city pages, so one page competes across five counties.</td></tr>
-    <tr><td class="cat">Brand continuity</td><td class="sc">3/10</td><td><span class="pill p-d">D</span></td>
-    <td>The site trades on "since 1979", but the awards, reviews and domain from that era sit on a different phone number and a .com address. A customer who searches finds two versions of the business and cannot tell which is current.</td></tr>
-    <tr><td class="cat">Platform and speed</td><td class="sc">7/10</td><td><span class="pill p-c">B&minus;</span></td>
-    <td>Squarespace, clean and fast. Nothing wrong with the foundation.</td></tr>
-  </tbody></table></div>
-</section>
-
-<section>
-  <div class="sec-h"><h2 class="sec">Where you sit against Central Washington</h2></div>
-  <p class="lede">Read on 21 August 2026 from public listings.</p>
-  <div class="tw"><table>
-    <thead><tr><th>Firm</th><th>Public position</th><th>Notes</th></tr></thead><tbody>
-    <tr><td class="cat">Purelight Power</td><td><strong>4.9 average on Google</strong></td><td>Multi-state operator actively marketing into Yakima County</td></tr>
-    <tr><td class="cat">Smart Solar Energy</td><td><strong>EnergySage 2024 Local Installer of the Year</strong></td><td>Family-owned, residential specialist</td></tr>
-    <tr><td class="cat">Solora Solar</td><td>3.0 rating on one aggregator</td><td>Local</td></tr>
-    <tr style="background:var(--f-soft)"><td class="cat"><strong>AllCities Solar Power+</strong></td>
-    <td><strong>No rating or review count displayed anywhere on your site.</strong> Visible reviews stop in 2019 under a previous phone number and domain</td>
-    <td>Five counties, plus in-house electrical work</td></tr>
-  </tbody></table></div>
-
-  <div class="call good">
-    <span class="call-l">One fact worth putting on your website</span>
-    <p><strong>Yakima gets over 152 sunny days a year and averages 6 to 7 hours of usable sunlight a
-    day.</strong> That is genuinely strong solar resource — better than most of Washington, and better
-    than a lot of places where solar sells well.</p>
-    <p>With the federal credit gone, the argument shifts from "there's 30% off" to "your roof actually
-    produces". <strong>That number is your argument and it is nowhere on your site.</strong> Confirm
-    the current figure before publishing it.</p>
-  </div>
-  <p style="font-size:13px;color:var(--faint)">Competitor detail from public directory listings on 21
-  August 2026, not independently verified.</p>
-</section>
-
-<section>
-  <div class="sec-h"><h2 class="sec">Estimated size, and what a normal year looks like</h2></div>
-  <div class="call slate">
-    <span class="call-l">Estimate</span>
-    <p><strong>A normal year: revenue roughly $2 million to $3 million, net profit roughly $150,000 to
-    $250,000.</strong></p>
-    <p><strong>How we got there.</strong> Public records list nine employees. US residential solar
-    installers run roughly $200,000 to $350,000 of revenue per head. Eastern Washington systems
-    typically run 8 to 12 kW at around $3.00 to $3.50 per watt installed, so $25,000 to $40,000 per
-    residential job, and a two-crew operation completing two to three installs a week across a working
-    season lands in the same band by a second route.</p>
-    <p>Small solar installers typically run <strong>5 to 10 percent net</strong>.</p>
-  </div>
-  <div class="call">
-    <span class="call-l">And 2026 is not a normal year</span>
-    <p>With residential demand down sharply across the industry, a realistic 2026 sits closer to
-    <strong>$1 million to $1.8 million, with profit at or near break-even</strong> — because nine
-    people is a fixed cost and the revenue halved underneath it.</p>
-    <p>That is the honest picture, and it is the reason the free fixes in this document come first.</p>
-  </div>
-  <p style="font-size:13px;color:var(--faint)">An estimate from public data, not a statement of your
-  accounts. US private companies do not file public accounts.</p>
-</section>
-
-<section>
-  <div class="sec-h"><h2 class="sec">Priority order</h2></div>
-  <p class="lede">The first three are free and take under an hour between them.</p>
-  <ol class="pri">
-    <li><h4>Fix the tap-to-call number</h4><p>Ten minutes in Squarespace. Every day it stays wrong, some proportion of your enquiries ring a number you are not answering.</p></li>
-    <li><h4>Answer the BBB complaint</h4><p>A B&minus; with revoked accreditation for not responding is a fixable problem, and solar buyers check BBB more than almost any other trade.</p></li>
-    <li><h4>Put a form on the site</h4><p>Property type, roof age, average power bill, and whether they own the home. Solar gets researched at night and you currently have no way to catch it.</p></li>
-    <li><h4>Get current reviews onto Google</h4><p>Your visible reviews stopped in 2019 under a different phone number. Recent reviews under the current business are the fastest credibility you can build.</p></li>
-    <li><h4>Lead with financing, not the credit</h4><p>The federal credit is gone and every competitor's page still talks about it. A page built for the homeowner asking "does this still make sense without the 30%?" would be the only honest one in your market.</p></li>
-    <li><h4>Publish licence, certification and insurance</h4><p>Licence number, NABCEP if held, and insurance. Buyers are told to check all three and yours are currently invisible.</p></li>
-  </ol>
-</section>
 
 <footer>
-  Prepared by AG1 Consulting, 21 August 2026, for Paul Comiskey of AllCities Solar Power+, Yakima,
-  Washington.<br>
-  Website findings taken directly from allcitiessolar.net and its page source on that date. Employee
-  count, BBB rating and accreditation status are as published on the Better Business Bureau profile.
-  Tax legislation detail is drawn from public reporting of the One Big Beautiful Bill and Section 25D;
-  confirm current incentive positions with your accountant before acting on them. Revenue figures are
-  estimates from public data, not statements of account.
+  Prepared by Andrei Givero · AG1 Consulting · 21 August 2026<br>
+  Website findings taken from allcitiessolar.net and its page source on that date. BBB rating and
+  accreditation status as published on the Better Business Bureau profile. Tax detail drawn from public
+  reporting of the One Big Beautiful Bill and Section 25D — confirm incentive positions with your
+  accountant. Revenue figures are estimates from public data, not statements of account or a guarantee.
 </footer>
-</div></body></html>
+</body>
+</html>
