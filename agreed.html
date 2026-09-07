@@ -1,0 +1,292 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AllCities Solar — Agreed Plan</title><style>
+:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--mut:#9aa7b4;--line:#2a3340;--accent:#2f81f7;
+  --good:#3fb950;--bad:#f85149;--gradF:#f85149;--gradD:#e8702a;--gradC:#d29922;--gradB:#3fb950;--gradA:#2ea043;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--mut);font-weight:600}
+header{padding:46px 0 28px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 400px at 70% -10%,rgba(47,129,247,.18),transparent)}
+h1{font-size:30px;font-weight:800;margin:10px 0 6px;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:15px}
+.hero{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin:34px 0 8px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}}
+.gradecard{border:1px solid var(--line);border-radius:18px;padding:26px;text-align:center;position:relative;overflow:hidden}
+.gc-F{background:linear-gradient(160deg,#2a1410,#1c2330)}.gc-D{background:linear-gradient(160deg,#2a1c10,#1c2330)}
+.gc-C{background:linear-gradient(160deg,#2a2410,#1c2330)}.gc-B{background:linear-gradient(160deg,#102a1a,#1c2330)}
+.bigletter{font-size:96px;font-weight:900;line-height:1;position:relative}
+.bl-F{color:var(--gradF);text-shadow:0 0 40px rgba(248,81,73,.45)}
+.bl-D{color:var(--gradD);text-shadow:0 0 40px rgba(232,112,42,.45)}
+.bl-C{color:var(--gradC);text-shadow:0 0 40px rgba(210,153,34,.45)}
+.score100{font-size:18px;color:var(--mut);margin-top:6px;position:relative}
+.heroread h2{font-size:21px;font-weight:800;margin-bottom:10px}
+.heroread p{color:var(--mut);font-size:15.5px}
+.heroread .tag{display:inline-block;margin-top:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--ink);background:var(--panel)}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+.h{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.row{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.rname{font-weight:600;font-size:15px}
+.bar{height:7px;background:#0b0f15;border-radius:99px;margin-top:9px;overflow:hidden}
+.fill{height:100%;border-radius:99px}
+.badge{font-weight:800;font-size:15px;min-width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#0d1117}
+.gF{background:var(--gradF)}.gD{background:var(--gradD)}.gC{background:var(--gradC)}.gB{background:var(--gradB);color:#06210f}.gA{background:var(--gradA);color:#06210f}
+.sc{font-size:12px;color:var(--mut);margin-top:3px}
+.flag{background:linear-gradient(160deg,#2a1410,#161b22);border:1px solid #6f2a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.flag .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--bad);font-weight:700;margin-bottom:8px}
+.win{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.win .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--good);font-weight:700;margin-bottom:8px}
+.warn{background:linear-gradient(160deg,#2a2410,#161b22);border:1px solid #6f5a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.warn .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--gradC);font-weight:700;margin-bottom:8px}
+.flag p,.win p,.warn p{color:var(--mut);font-size:14.5px;margin-bottom:9px}
+.flag p:last-child,.win p:last-child,.warn p:last-child{margin-bottom:0}
+.flag b,.win b,.warn b{color:var(--ink)}
+.flag ul,.win ul,.warn ul{margin:0 0 9px 20px;color:var(--mut);font-size:14.5px}
+.flag li,.win li,.warn li{margin-bottom:6px}
+.code{background:#0b0f15;border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;line-height:1.85;color:var(--mut);overflow-x:auto}
+.code .ph{color:#ff9d94;font-weight:700}.code .ok{color:#84e0a8;font-weight:700}.code .c{color:#5b6672}
+.cmp{width:100%;border-collapse:collapse;font-size:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.cmp th{text-align:left;padding:11px 14px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);border-bottom:1px solid var(--line);font-weight:700}
+.cmp td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--mut);vertical-align:top}
+.cmp tr:last-child td{border-bottom:none}.cmp td b{color:var(--ink)}.cmp tr.you td{background:#241a12}
+.cmp .yes{color:var(--good);font-weight:700}.cmp .no{color:var(--bad);font-weight:700}
+.opp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){.opp{grid-template-columns:1fr}}
+.ocard{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px;text-align:center}
+.ocard .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
+.ocard .big{font-size:30px;font-weight:900;color:var(--good);margin:8px 0 2px}
+.ocard .small{font-size:13px;color:var(--mut)}
+.oppnote{color:var(--mut);font-size:14px;margin-top:14px}.oppnote b{color:var(--ink)}
+.arrow{display:flex;align-items:center;justify-content:center;gap:18px;margin:6px 0 2px;flex-wrap:wrap}
+.pill{font-size:60px;font-weight:900;line-height:1}
+.pill.from-F{color:var(--gradF)}.pill.from-D{color:var(--gradD)}.pill.from-C{color:var(--gradC)}
+.pill.to{color:var(--gradA)}
+.pilllab{font-size:12px;color:var(--mut);text-align:center;text-transform:uppercase;letter-spacing:.1em}
+.ar{font-size:34px;color:var(--mut)}
+ul.road{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:760px){ul.road{grid-template-columns:1fr}}
+ul.road li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:11px 14px;font-size:14.5px}
+.road2 li{border-left-color:var(--good)}
+.cta{text-align:center;padding:40px 0 56px}
+.cta h2{font-size:22px;font-weight:800;margin-bottom:8px}
+.cta p{color:var(--mut);font-size:15px}
+footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;line-height:1.7}
+.gscale{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 20px;margin-top:16px}
+.gscale .gtitle{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut);font-weight:700;margin-bottom:26px;text-align:center}
+.gtrack{position:relative;height:14px;border-radius:8px;background:linear-gradient(90deg,#f85149 0%,#f85149 18%,#e3833c 34%,#d4a72c 52%,#7ec46a 74%,#3fb950 100%);margin:0 4px}
+.gmark{position:absolute;top:-46px;transform:translateX(-50%);text-align:center;white-space:nowrap}
+.gmark .gm-lab{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);font-weight:700}
+.gmark .gm-val{font-size:19px;font-weight:900;line-height:1.15}
+.gmark:after{content:"";position:absolute;left:50%;top:100%;width:2px;height:22px;transform:translateX(-50%);background:currentColor;opacity:.75}
+.gmark.now{color:var(--bad)}.gmark.now .gm-val{color:var(--bad)}
+.gmark.proj{color:var(--good)}.gmark.proj .gm-val{color:var(--good)}
+.gmark.proj{top:auto;bottom:-52px}
+.gmark.proj:after{top:auto;bottom:100%}
+.gdot{position:absolute;top:50%;width:16px;height:16px;border-radius:50%;transform:translate(-50%,-50%);border:3px solid #0d1117}
+.gdot.now{background:var(--bad)}.gdot.proj{background:var(--good)}
+.gticks{display:flex;justify-content:space-between;margin:66px 4px 0;font-size:11px;letter-spacing:.08em;color:var(--mut);font-weight:700}
+@media(max-width:620px){.gmark .gm-lab{font-size:9px}.gmark .gm-val{font-size:16px}}
+</style></head><body>
+<style>
+.agreed{background:linear-gradient(160deg,#0f2417,var(--panel));border:1px solid #1f6f3a;border-radius:16px;padding:26px;margin-bottom:16px}
+.agreed h3{font-size:21px;margin-bottom:10px}
+.agreed p{color:var(--mut);font-size:15px;margin-bottom:9px}
+.agreed b{color:var(--ink)}
+.lane{display:grid;grid-template-columns:34px 1fr;gap:15px;background:var(--panel);border:1px solid var(--line);
+ border-radius:13px;padding:18px 20px;margin-bottom:11px}
+.lane .num{width:34px;height:34px;border-radius:9px;background:var(--accent);color:#fff;font-weight:800;
+ display:flex;align-items:center;justify-content:center;font-size:15px}
+.lane.last .num{background:#5b6672}
+.lane h4{font-size:17px;margin-bottom:5px}
+.lane p{font-size:14.5px;color:var(--mut);margin:0}
+.lane .why{font-size:13.5px;color:var(--good);border-top:1px solid var(--line);padding-top:9px;margin-top:9px}
+.mathrow{display:grid;grid-template-columns:1fr auto;gap:14px;padding:11px 0;border-bottom:1px solid var(--line);font-size:15px}
+.mathrow:last-child{border-bottom:none}
+.mathrow .v{font-weight:800;color:var(--ink);font-family:ui-monospace,Consolas,monospace}
+.mathrow.tot{border-top:2px solid var(--good);margin-top:6px;padding-top:14px}
+.mathrow.tot .v{color:var(--good);font-size:19px}
+.mathbox{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px 26px;margin:14px 0}
+.wk{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+@media(max-width:760px){.wk{grid-template-columns:1fr 1fr}}
+.wk div{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:15px}
+.wk .d{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:6px}
+.wk p{font-size:13.5px;color:var(--mut);margin:0}
+.chk{list-style:none;margin:0;padding:0}
+.chk li{display:grid;grid-template-columns:22px 1fr;gap:11px;padding:10px 0;border-bottom:1px solid var(--line);font-size:15px;color:var(--mut)}
+.chk li:last-child{border-bottom:none}
+.chk li b{color:var(--ink)}
+.chk .box{width:17px;height:17px;border:2px solid var(--accent);border-radius:4px;margin-top:3px}
+</style>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Agreed plan &mdash; for review before onboarding</div>
+    <h1>AllCities Solar Power+ &mdash; What We Agreed</h1>
+    <div class="sub">Paul Comiskey &middot; 30 August 2026 &middot; AG1 Consulting</div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section style="border-bottom:none">
+    <div class="agreed">
+      <h3>The decision, in writing</h3>
+      <p><b>Phase one &mdash; foundation: $2,500, one-off.</b> Website overhaul: enquiry form, bill
+      upload, conversion and call tracking, a rewritten incentives page, and county pages.</p>
+      <p><b>Phase two &mdash; Starter package: $2,500 a month.</b> $1,250 management, $1,250 ad spend.
+      One to two campaigns to begin.</p>
+      <p><b>Reviewed at 90 days</b> before deciding whether to scale to the $4,000 tier, which carries
+      $2,000 of management, $2,000 of spend and all four campaigns.</p>
+      <p><b>No long contract and no lock-in.</b> This page is a summary for your review, not a
+      contract; final terms are confirmed separately in writing.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">Why We Start Where We Start</div>
+    <p class="oppnote" style="margin-top:0;margin-bottom:16px"><b>You changed the running order on our
+    call and you were right to.</b> We had put the stranded-customer work first because it is the
+    easiest to win. You pointed out it is <b>low-margin service work</b> that would need roughly two
+    people at 60% of their time to run efficiently &mdash; so winning more of it before you have that
+    team makes your business worse, not better. <b>It has moved to last.</b></p>
+
+    <div class="lane"><div class="num">1</div><div>
+      <h4>Commercial &amp; Agricultural</h4>
+      <p>Orchards, vineyards, hop yards, packing houses, cold storage and irrigation across the valley.
+      Large, year-round users who buy on payback arithmetic.</p>
+      <div class="why"><b>First because:</b> highest job value, the Section 48E credit runs to 2032, and
+      being a licensed electrical <i>and</i> general contractor means nothing is subbed out.</div>
+    </div></div>
+
+    <div class="lane"><div class="num">2</div><div>
+      <h4>Power Storage &amp; Backup</h4>
+      <p>Backup for homes on wells, properties with medical equipment, and the fully off-grid builds
+      where bringing utility power in is impossible or uneconomic.</p>
+      <div class="why"><b>Second because:</b> it keeps the full federal credit, it sells on
+      consequences rather than payback, and the hybrid inverter and lithium-iron-phosphate work is a
+      specialism most solar firms cannot do at all.</div>
+    </div></div>
+
+    <div class="lane"><div class="num">3</div><div>
+      <h4>Electrical Work</h4>
+      <p>Panel upgrades, service work, EV charging. The line most solar companies have to subcontract.</p>
+      <div class="why"><b>Third because:</b> it keeps crews busy between installs, no solar policy
+      change can touch it, and every panel upgrade is a solar conversation eighteen months later.</div>
+    </div></div>
+
+    <div class="lane last"><div class="num">4</div><div>
+      <h4>Stranded-System Rescue &mdash; held back deliberately</h4>
+      <p>The customers left behind by Solgen, Purelight, Lumio, Freedom Solar and Revolution Solar.</p>
+      <div class="why" style="color:var(--gradC)"><b>Last because you said so:</b> low margin, and it
+      needs a dedicated service team before volume helps. <b>The demand is not going anywhere</b>
+      &mdash; those people already find you one at a time through banks and the utility. We turn it on
+      when the team exists to absorb it.</div>
+    </div></div>
+  </section>
+
+  <section>
+    <div class="h">The Positioning</div>
+    <div class="agreed">
+      <h3>Stability, against a market that has been let down</h3>
+      <p><b>Your competitor situation is unusual.</b> The aggressive out-of-state operators failed.
+      What remains locally &mdash; Ellensburg Solar in particular &mdash; markets well, with tracking
+      and a page for every town, <b>but has a post-sale reputation weak enough that their customers
+      ring you for help.</b></p>
+      <p><b>So the position is not &ldquo;we are bigger&rdquo;.</b> You were explicit that you do not
+      want to advertise being the biggest or the baddest &mdash; you want to be the best and the most
+      memorable. The line that does that work is stability:</p>
+      <p style="font-size:17px;color:var(--ink)"><b>&ldquo;We will still be here when your system needs
+      looking at.&rdquo;</b></p>
+      <p><b>Backed by three things nobody else in the market can claim together:</b> a company serving
+      Yakima since 1979, a licensed electrical contractor rather than a sales organisation, and wind
+      turbines from October &mdash; which no competitor here offers at all.</p>
+    </div>
+    <div class="warn">
+      <div class="lab">Your two creative ideas &mdash; both worth building</div>
+      <p><b>The animated characters, including Willy Wind.</b> Memorable, ownable, and completely unlike
+      the identikit solar advertising in this market. That is brand work and it should run alongside
+      the campaigns, not instead of them.</p>
+      <p><b>The real-time production meter on a digital reader board.</b> This is the stronger of the
+      two commercially &mdash; live kilowatt-hours from a real system, on the busiest street in Yakima
+      County, is proof rather than a claim. <b>It is also the single best use of the signage you already
+      want.</b></p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">What Success Looks Like, In Numbers</div>
+    <div class="mathbox">
+      <div class="mathrow"><div>Average job value (your figure)</div><div class="v">$41,000</div></div>
+      <div class="mathrow"><div>Net margin, taken at the low end of your range</div><div class="v">7%</div></div>
+      <div class="mathrow"><div>Net profit from one average job</div><div class="v">$2,870</div></div>
+      <div class="mathrow"><div>Starter package, all in, per month</div><div class="v">$2,500</div></div>
+      <div class="mathrow tot"><div><b>Jobs per month to break even</b></div><div class="v">0.9</div></div>
+    </div>
+    <p class="oppnote"><b>Under one average job a month covers the entire programme</b>, at the
+    least favourable margin you gave us. You currently complete about 4.5 a month. <b>This is
+    arithmetic on your own figures, not a forecast &mdash; no number of leads, jobs or revenue is
+    promised, and results depend on your market, pricing and sales process.</b></p>
+    <p class="oppnote"><b>The target we are actually building toward is smaller than doubling.</b> You
+    said $2 million needs only two more people. Producing enough reliable work to justify those two
+    hires is the ninety-day objective.</p>
+  </section>
+
+  <section>
+    <div class="h">The First Four Weeks</div>
+    <div class="wk">
+      <div><div class="d">Week 1</div><p>Onboarding, access to the site, ad accounts and analytics. Tracking and call tracking installed first so there is a baseline.</p></div>
+      <div><div class="d">Week 2</div><p>The enquiry form and bill upload built, with the qualifying questions agreed with you &mdash; you know which answers matter.</p></div>
+      <div><div class="d">Week 3</div><p>Incentives page rewritten, county pages, and the commercial landing page. Everything tested end to end.</p></div>
+      <div><div class="d">Week 4</div><p>Campaign one live. Reporting set up against cost per booked job rather than clicks.</p></div>
+    </div>
+    <p class="oppnote"><b>Working estimates, not contractual dates</b> &mdash; timing depends on how
+    quickly access and content come back from your side. <b>Campaigns need four to six weeks of data
+    before they are worth judging</b>, which is why the review is at ninety days rather than thirty.</p>
+  </section>
+
+  <section>
+    <div class="h">For Wednesday &mdash; 2 September, 1:00pm PST</div>
+    <div class="agreed">
+      <h3>What to have ready</h3>
+      <ul class="chk">
+        <li><span class="box"></span><div><b>One team member's email address</b> so we can invite them to the onboarding call &mdash; ideally whoever will be answering the enquiries.</div></li>
+        <li><span class="box"></span><div><b>Access to your Squarespace site</b>, your Google Analytics, and any Google Ads account if one exists.</div></li>
+        <li><span class="box"></span><div><b>Your Google Business Profile login</b>, or confirmation of who holds it.</div></li>
+        <li><span class="box"></span><div><b>Photographs</b> &mdash; commercial and agricultural installs especially. The concept page has empty image slots because we have none.</div></li>
+        <li><span class="box"></span><div><b>Which counties matter most</b>, so the first campaign is not spread across all five.</div></li>
+        <li><span class="box"></span><div><b>Anything Ashley left behind</b> &mdash; logins, drafts, the September animation work in progress.</div></li>
+        <li><span class="box"></span><div><b>Your questions.</b> You said you would have them once you had thought it through, and this is the call to bring them to.</div></li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="cta">
+    <h2>Commercial first, storage second, and the stranded customers when the team exists to serve them.</h2>
+    <p>Nothing here asks you to be the loudest company in Yakima. It asks that the people already
+    looking for what you do can find you, reach you, and be counted when they do.</p>
+  </div>
+</div>
+
+<footer>
+  Prepared by Andrei Givero &middot; AG1 Consulting &middot; 30 August 2026<br>
+  For Paul Comiskey of AllCities Solar Power+, Yakima, Washington. <b>This document is a summary of
+  what was discussed and agreed on our calls of 29 and 30 August 2026, provided for your review. It is
+  not a contract; final scope, payment terms and any third-party costs will be confirmed separately in
+  writing.</b> <b>All business figures &mdash; revenue, net margin, job counts, average job value,
+  close rate, crew and headcount numbers, the stranded-customer estimates, and your assessment of
+  competitors' post-sale reputation &mdash; are as you stated them to us and have NOT been
+  independently verified by AG1 Consulting.</b> <b>The break-even calculation is arithmetic applied to
+  your own figures. It is not a forecast, a projection or a guarantee. AG1 Consulting promises no
+  number of leads, enquiries, jobs, installs or revenue, and no outcome from any campaign is
+  guaranteed.</b> Statements about Solgen, Purelight, Lumio, Freedom Solar and Revolution Solar are
+  drawn from your own account together with published reporting; they describe reported events and
+  allegations rather than findings of fact, and are commercial context only. <b>References to federal
+  incentives including Section 48E, to the treatment of power storage, and to a possible Washington
+  state residential rebate are general context and are NOT tax advice &mdash; AG1 Consulting is not
+  qualified to give it and you must confirm any tax position with a qualified CPA.</b> <b>Wind turbine
+  height limits and permitting are county and city matters you must confirm independently.</b>
+  Timescales are working estimates and are not contractual dates.
+</footer>
+</body></html>
