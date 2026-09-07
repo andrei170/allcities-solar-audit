@@ -1,0 +1,444 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AllCities Solar — Competitor & Market Analysis</title><style>
+:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--mut:#9aa7b4;--line:#2a3340;--accent:#2f81f7;
+  --good:#3fb950;--bad:#f85149;--gradF:#f85149;--gradD:#e8702a;--gradC:#d29922;--gradB:#3fb950;--gradA:#2ea043;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--mut);font-weight:600}
+header{padding:46px 0 28px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 400px at 70% -10%,rgba(47,129,247,.18),transparent)}
+h1{font-size:30px;font-weight:800;margin:10px 0 6px;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:15px}
+.hero{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin:34px 0 8px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}}
+.gradecard{border:1px solid var(--line);border-radius:18px;padding:26px;text-align:center;position:relative;overflow:hidden}
+.gc-F{background:linear-gradient(160deg,#2a1410,#1c2330)}.gc-D{background:linear-gradient(160deg,#2a1c10,#1c2330)}
+.gc-C{background:linear-gradient(160deg,#2a2410,#1c2330)}.gc-B{background:linear-gradient(160deg,#102a1a,#1c2330)}
+.bigletter{font-size:96px;font-weight:900;line-height:1;position:relative}
+.bl-F{color:var(--gradF);text-shadow:0 0 40px rgba(248,81,73,.45)}
+.bl-D{color:var(--gradD);text-shadow:0 0 40px rgba(232,112,42,.45)}
+.bl-C{color:var(--gradC);text-shadow:0 0 40px rgba(210,153,34,.45)}
+.score100{font-size:18px;color:var(--mut);margin-top:6px;position:relative}
+.heroread h2{font-size:21px;font-weight:800;margin-bottom:10px}
+.heroread p{color:var(--mut);font-size:15.5px}
+.heroread .tag{display:inline-block;margin-top:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--ink);background:var(--panel)}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+.h{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.row{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.rname{font-weight:600;font-size:15px}
+.bar{height:7px;background:#0b0f15;border-radius:99px;margin-top:9px;overflow:hidden}
+.fill{height:100%;border-radius:99px}
+.badge{font-weight:800;font-size:15px;min-width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#0d1117}
+.gF{background:var(--gradF)}.gD{background:var(--gradD)}.gC{background:var(--gradC)}.gB{background:var(--gradB);color:#06210f}.gA{background:var(--gradA);color:#06210f}
+.sc{font-size:12px;color:var(--mut);margin-top:3px}
+.flag{background:linear-gradient(160deg,#2a1410,#161b22);border:1px solid #6f2a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.flag .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--bad);font-weight:700;margin-bottom:8px}
+.win{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.win .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--good);font-weight:700;margin-bottom:8px}
+.warn{background:linear-gradient(160deg,#2a2410,#161b22);border:1px solid #6f5a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.warn .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--gradC);font-weight:700;margin-bottom:8px}
+.flag p,.win p,.warn p{color:var(--mut);font-size:14.5px;margin-bottom:9px}
+.flag p:last-child,.win p:last-child,.warn p:last-child{margin-bottom:0}
+.flag b,.win b,.warn b{color:var(--ink)}
+.flag ul,.win ul,.warn ul{margin:0 0 9px 20px;color:var(--mut);font-size:14.5px}
+.flag li,.win li,.warn li{margin-bottom:6px}
+.code{background:#0b0f15;border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;line-height:1.85;color:var(--mut);overflow-x:auto}
+.code .ph{color:#ff9d94;font-weight:700}.code .ok{color:#84e0a8;font-weight:700}.code .c{color:#5b6672}
+.cmp{width:100%;border-collapse:collapse;font-size:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.cmp th{text-align:left;padding:11px 14px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);border-bottom:1px solid var(--line);font-weight:700}
+.cmp td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--mut);vertical-align:top}
+.cmp tr:last-child td{border-bottom:none}.cmp td b{color:var(--ink)}.cmp tr.you td{background:#241a12}
+.cmp .yes{color:var(--good);font-weight:700}.cmp .no{color:var(--bad);font-weight:700}
+.opp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){.opp{grid-template-columns:1fr}}
+.ocard{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px;text-align:center}
+.ocard .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
+.ocard .big{font-size:30px;font-weight:900;color:var(--good);margin:8px 0 2px}
+.ocard .small{font-size:13px;color:var(--mut)}
+.oppnote{color:var(--mut);font-size:14px;margin-top:14px}.oppnote b{color:var(--ink)}
+.arrow{display:flex;align-items:center;justify-content:center;gap:18px;margin:6px 0 2px;flex-wrap:wrap}
+.pill{font-size:60px;font-weight:900;line-height:1}
+.pill.from-F{color:var(--gradF)}.pill.from-D{color:var(--gradD)}.pill.from-C{color:var(--gradC)}
+.pill.to{color:var(--gradA)}
+.pilllab{font-size:12px;color:var(--mut);text-align:center;text-transform:uppercase;letter-spacing:.1em}
+.ar{font-size:34px;color:var(--mut)}
+ul.road{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:760px){ul.road{grid-template-columns:1fr}}
+ul.road li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:11px 14px;font-size:14.5px}
+.road2 li{border-left-color:var(--good)}
+.cta{text-align:center;padding:40px 0 56px}
+.cta h2{font-size:22px;font-weight:800;margin-bottom:8px}
+.cta p{color:var(--mut);font-size:15px}
+footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;line-height:1.7}
+.gscale{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 20px;margin-top:16px}
+.gscale .gtitle{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut);font-weight:700;margin-bottom:26px;text-align:center}
+.gtrack{position:relative;height:14px;border-radius:8px;background:linear-gradient(90deg,#f85149 0%,#f85149 18%,#e3833c 34%,#d4a72c 52%,#7ec46a 74%,#3fb950 100%);margin:0 4px}
+.gmark{position:absolute;top:-46px;transform:translateX(-50%);text-align:center;white-space:nowrap}
+.gmark .gm-lab{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);font-weight:700}
+.gmark .gm-val{font-size:19px;font-weight:900;line-height:1.15}
+.gmark:after{content:"";position:absolute;left:50%;top:100%;width:2px;height:22px;transform:translateX(-50%);background:currentColor;opacity:.75}
+.gmark.now{color:var(--bad)}.gmark.now .gm-val{color:var(--bad)}
+.gmark.proj{color:var(--good)}.gmark.proj .gm-val{color:var(--good)}
+.gmark.proj{top:auto;bottom:-52px}
+.gmark.proj:after{top:auto;bottom:100%}
+.gdot{position:absolute;top:50%;width:16px;height:16px;border-radius:50%;transform:translate(-50%,-50%);border:3px solid #0d1117}
+.gdot.now{background:var(--bad)}.gdot.proj{background:var(--good)}
+.gticks{display:flex;justify-content:space-between;margin:66px 4px 0;font-size:11px;letter-spacing:.08em;color:var(--mut);font-weight:700}
+@media(max-width:620px){.gmark .gm-lab{font-size:9px}.gmark .gm-val{font-size:16px}}
+</style></head><body>
+<style>
+.dead{background:linear-gradient(160deg,#2a1410,#161b22);border:1px solid #6f2a1f;border-radius:14px;padding:22px 24px;margin-bottom:14px}
+.dead .st{display:inline-block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;
+ background:var(--bad);color:#1a0b09;padding:4px 11px;border-radius:99px;margin-bottom:11px}
+.dead h3{font-size:21px;margin-bottom:9px}
+.dead p{color:var(--mut);font-size:14.5px;margin-bottom:9px}
+.dead p:last-child{margin-bottom:0}
+.dead b{color:var(--ink)}
+.alive{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.alive h4{font-size:16px;margin-bottom:5px}
+.alive p{font-size:13.5px;color:var(--mut);margin:0}
+.alivegrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.alivegrid{grid-template-columns:1fr}}
+.big2{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){.big2{grid-template-columns:1fr}}
+.bx{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:22px;text-align:center}
+.bx .n3{font-size:34px;font-weight:900;color:var(--good);line-height:1.05;margin-bottom:5px}
+.bx .l3{font-size:12px;text-transform:uppercase;letter-spacing:.11em;color:var(--mut)}
+.bx .s3{font-size:13px;color:var(--mut);margin-top:6px}
+</style>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Competitor Analysis</div>
+    <h1>AllCities Solar Power+ &mdash; Who You Are Actually Competing With</h1>
+    <div class="sub">Prepared for Paul Comiskey &middot; 30 August 2026 &middot; AG1 Consulting</div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section style="border-bottom:none">
+    <div class="win">
+      <div class="lab">The finding, before anything else</div>
+      <p><b>You named four out-of-state operators who came into your market hard: Solgen, Lumio,
+      Freedom Solar and Revolution Solar. Every one of them has failed.</b></p>
+      <p>Your own account on our call: Solgen went bankrupt and was pushed out of the state, <b>paid a
+      $250,000 fine, came back as Purelight Solar, and was gone within a year</b> &mdash; leaving
+      customers and banks stranded. Published reporting adds that Solgen ceased all Washington
+      operations on <b>13 January 2026</b>, listing liabilities of <b>$50&ndash;100 million</b> and
+      between <b>25,000 and 50,000 creditors</b> nationally, closing sites in Pasco, Spokane, Lakewood,
+      Kent, Fife and Everett. <b>Lumio</b> filed Chapter 11 in September 2024, converted to Chapter 7,
+      and sold its assets for $4 million.</p>
+      <p><b>And the number that matters is yours, not ours.</b> You told us those companies left
+      roughly <b>2,000 customers in your area</b>, and that you have corrected and made whole
+      <b>about 15 of them.</b></p>
+      <p><b>Fifteen out of two thousand.</b> That is not a competitor analysis. It is a list of people
+      who own solar, have a fault, have no warranty and no company to ring &mdash; and who live in your
+      counties.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">The Four You Named</div>
+
+    <div class="dead">
+      <div class="st">Bankrupt &middot; WA operations closed Jan 2026</div>
+      <h3>Solgen Power / Purelight Power &mdash; Pasco, WA</h3>
+      <p><b>Started in a Pasco garage less than a decade ago and grew fast.</b> Declared bankruptcy
+      listing <b>liabilities between $50 million and $100 million</b> and <b>between 25,000 and 50,000
+      creditors</b>. All Washington operations ceased <b>13 January 2026</b>, closing sites in Pasco,
+      Spokane, Lakewood, Kent, Fife and Everett. Fifty-three jobs went in Pasco alone.</p>
+      <p><b>Why they went:</b> lawsuits in several states alleging fraudulent misrepresentation,
+      negligence and deceptive sales practices, <b>many involving elderly customers</b>. A separate
+      Washington class action over unlawful non-compete clauses. And <b>eleven Labor &amp; Industries
+      inspections since 2021 over fall-protection failures.</b></p>
+      <p><b>What it means for you:</b> they sold hard, across your counties, and their customers are
+      now stranded. That is the single biggest commercial fact in this document.</p>
+    </div>
+
+    <div class="dead">
+      <div class="st">Chapter 11 &rarr; Chapter 7 &middot; In liquidation</div>
+      <h3>Lumio &mdash; national residential installer</h3>
+      <p><b>Filed Chapter 11 on 4 September 2024</b> in Delaware, then converted to Chapter 7. Assets
+      were sold to Zeo Energy for <b>$4 million in cash and stock</b> &mdash; against a credit bid that
+      had been reported at $100 million.</p>
+      <p>As of early 2026 the liquidating trust was working through roughly <b>950 filed proofs of
+      claim</b> and pursuing litigation against former insiders. <b>The claim-objection deadline was
+      extended to 17 August 2026.</b></p>
+      <p><b>What it means for you:</b> another national operator that sold into Washington and is no
+      longer able to service anything it installed.</p>
+    </div>
+  </section>
+
+    <div class="dead">
+      <div class="st">Named by you &middot; no longer operating in your market</div>
+      <h3>Freedom Solar &amp; Revolution Solar</h3>
+      <p>You named both alongside Solgen and Lumio as out-of-state operators who came into central
+      Washington with <b>aggressive phone calling, door knocking and, in your words, &ldquo;even stuff
+      that's illegal&rdquo;</b>, and who are no longer operating here.</p>
+      <p><b>We have not independently verified the status of either company</b> and are recording them
+      as you described them. <b>Their customers form part of the same 2,000.</b></p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">The Opportunity Nobody Is Marketing To</div>
+    <div class="big2">
+      <div class="bx"><div class="n3">~2,000</div><div class="l3">Stranded customers, your figure</div>
+        <div class="s3">left behind in your area by the four firms</div></div>
+      <div class="bx"><div class="n3">15</div><div class="l3">You have made whole</div>
+        <div class="s3">0.75% of them &mdash; and nobody is competing for the rest</div></div>
+      <div class="bx"><div class="n3">1979</div><div class="l3">The company has been here since</div>
+        <div class="s3">licensed electrical and general contractor</div></div>
+    </div>
+    <p class="oppnote"><b>By your own count there are around 2,000 people in your area with a solar system, a problem, and no company to ring &mdash; and you have reached 15 of them.</b> Their installer is bankrupt. Their workmanship warranty is worthless. And they are already finding you one at a time, through utilities, Labor and Industries, and banks calling you to fix somebody else's mess. <b>Nobody is bidding on those searches because nobody has thought to.</b></p>
+
+    <div class="win" style="margin-top:16px">
+      <div class="lab">The campaign this argues for</div>
+      <ul>
+        <li><b>Orphaned system service and repair.</b> &ldquo;Your installer went out of business. We are still here.&rdquo; These people already own solar, are already unhappy, and need somebody local and licensed. <b>No tax credit is involved, so the January change does not touch this line at all.</b> You are already doing this work reactively when a bank or the utility calls you &mdash; this simply makes it something you win on purpose.</li>
+        <li><b>System takeover, inspection and fault-finding</b> &mdash; the work an electrical contractor can do that a sales-led solar outfit never could.</li>
+        <li><b>Panel and inverter replacement</b> on systems whose original supplier no longer exists.</li>
+        <li><b>Battery retrofit to existing systems</b> &mdash; an upgrade sale to people who already believe in solar.</li>
+      </ul>
+      <p><b>This is the fastest revenue in this document</b>, because the customers already exist, they
+      have a problem today, and there is no competition for them.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">Who You Are Actually Competing With &mdash; And What They Are Spending</div>
+    <p class="oppnote" style="margin-top:0;margin-bottom:16px"><b>We opened each of these sites and
+    read the tracking code they are running.</b> Advertising tags are visible in a page's source, so
+    this is evidence rather than opinion: a Google Ads conversion tag means somebody is buying clicks
+    and measuring them.</p>
+
+    <table class="cmp">
+      <tr><th>Company</th><th>Analytics</th><th>Google Ads</th><th>Call tracking</th><th>Forms</th><th>Read</th></tr>
+      <tr class="you"><td><b>You</b><br><span style="font-size:12.5px">AllCities, Yakima</span></td>
+        <td class="yes">GA4</td><td class="no">none</td><td class="no">none</td><td class="no">0</td>
+        <td><b>Measuring visits, buying nothing, capturing nothing</b></td></tr>
+      <tr><td><b>Ellensburg Solar</b><br><span style="font-size:12.5px">~35 miles &middot; the real threat</span></td>
+        <td class="yes">GA4</td><td class="yes"><b>YES</b></td><td class="yes"><b>YES</b></td><td class="yes">1</td>
+        <td><b>Doing it properly</b> &mdash; buying clicks, tracking the calls</td></tr>
+      <tr><td><b>A&amp;R Solar</b><br><span style="font-size:12.5px">Seattle &middot; targets Yakima</span></td>
+        <td class="yes">GTM</td><td class="yes"><b>YES</b></td><td class="no">none</td><td class="yes">1</td>
+        <td>Running ads into your county from 140 miles away</td></tr>
+      <tr><td><b>Solora Solar</b><br><span style="font-size:12.5px">Seattle &middot; targets Yakima</span></td>
+        <td class="yes">GA4</td><td class="no">none found</td><td class="no">none</td><td class="yes">2</td>
+        <td>Meta pixel instead &mdash; social, not search</td></tr>
+    </table>
+
+    <div class="flag" style="margin-top:18px">
+      <div class="lab">The one to worry about</div>
+      <h3 style="font-size:20px;margin-bottom:9px">Ellensburg Solar &mdash; about 35 miles away</h3>
+      <p><b>This is the competitor doing everything you are not.</b> They are running a Google Ads
+      conversion tag, GA4 <b>and</b> call tracking &mdash; which means they know what a phone call
+      costs them and you do not know what anything costs you.</p>
+      <p><b>And they are coming straight at your towns.</b> They publish separate pages for
+      <b>Yakima, Selah, Sunnyside, Toppenish, Wapato, Grandview, Granger, Moxee, Naches, White Swan
+      and Zillah</b> &mdash; and further out to Prosser, Kennewick, Richland and Pasco. Page titles
+      like <i>&ldquo;Best Solar Panel Company in Yakima&rdquo;</i> exist to rank for searches in your
+      own city.</p>
+      <p><b>They also have a commercial page</b>, so they are chasing the agricultural work as well.</p>
+      <p><b>What they do not have that you do:</b> 47 years in the valley, an electrical contractor's
+      licence, and wind. <b>What they have that you do not:</b> a form, a tracked phone number, and a
+      page for every town.</p>
+    </div>
+
+    <div class="warn">
+      <div class="lab">The two reaching in from the coast</div>
+      <p><b>A&amp;R Solar</b> is a Seattle firm with Portland and Seattle phone numbers &mdash; and a
+      page built specifically for Yakima, with a Google Ads tag behind it. They are paying to appear
+      in your market from the other side of the mountains.</p>
+      <p><b>Solora Solar</b> is also Seattle-based with a Yakima page, running a Meta pixel rather
+      than Google Ads and using 800 numbers. Social rather than search.</p>
+      <p><b>Neither of them can send somebody out this afternoon.</b> That is the argument, and
+      neither of them can answer it &mdash; but it only works if you appear on the page beside them.</p>
+    </div>
+
+    <div class="win">
+      <div class="lab">Doing badly on advertising &mdash; which is where the ground is</div>
+      <p><b>Solora is running social advertising with no Google Ads tag we could find</b>, which means
+      the high-intent search traffic &mdash; the person typing &ldquo;solar company Yakima&rdquo;
+      today &mdash; is being fought over by fewer companies than you would expect.</p>
+      <p><b>Nobody in this group displays a rating or review count on the pages we read.</b> Not one.
+      In a market where two big operators just went bankrupt on the back of complaints, <b>a visible
+      review count is the most valuable thing on the page and it is sitting unclaimed.</b></p>
+      <p><b>Nobody is marketing to the orphaned Solgen and Lumio customers</b> either. That is the
+      clearest open ground in this document.</p>
+    </div>
+
+    <div class="opp" style="margin-top:16px">
+      <div class="ocard"><div class="lab">Competitors running Google Ads</div><div class="big">2 of 3</div><div class="small">and you are not one of them</div></div>
+      <div class="ocard"><div class="lab">With call tracking</div><div class="big">1 of 3</div><div class="small">Ellensburg &mdash; they know their cost per call</div></div>
+      <div class="ocard"><div class="lab">Showing a review rating</div><div class="big">0 of 4</div><div class="small">including you &mdash; open ground</div></div>
+    </div>
+
+    <p class="oppnote"><b>Read the first row of that table again.</b> You have analytics, so you can
+    see people arriving. You have no form, so you cannot catch them. You have no ads tag, so you are
+    not buying any. <b>Two of your three live competitors are buying the traffic you are watching walk
+    past.</b></p>
+  </section>
+
+  <section>
+    <div class="h">The Market Itself &mdash; Yakima And Central Washington</div>
+
+    <div class="win">
+      <div class="lab">The single best thing happening in your market right now</div>
+      <div class="code">Electricity in Yakima   <span class="ok">about 15 cents per kWh (Pacific Power)</span>
+Pacific Power          <span class="ph">has been seeking a rate increase of around 14%</span>
+What that does         <span class="ok">shortens payback on every system you quote</span></div>
+      <p><b>This is the argument that replaces the tax credit.</b> The 30% federal credit made solar
+      cheaper. A rising electricity price makes solar <b>more valuable</b> &mdash; and it does it every
+      month, permanently, without Congress being involved.</p>
+      <p><b>Nobody in your market is running that campaign.</b> The industry is still writing copy about
+      an incentive that expired. The company that instead says <i>&ldquo;your power bill is going up
+      again &mdash; here is what that does to the maths&rdquo;</i> is selling on something the customer
+      can see on their own statement.</p>
+      <p><b>Confirm the current rate case status before it goes in any advertising</b>, because rate
+      filings change and get amended. But the direction of travel is the story.</p>
+    </div>
+
+    <div class="warn">
+      <div class="lab">The Yakima Valley is unusually good ground for commercial solar</div>
+      <p><b>You are sitting in one of the most agriculturally intense areas in the United States</b>
+      &mdash; orchards, vineyards, hop yards, packing houses, cold storage and irrigation. Those are
+      not small electricity users. Cold storage runs year-round and irrigation pumps run hard through
+      exactly the months your sun is strongest.</p>
+      <p><b>And Section 48E still applies to commercial systems through 2032.</b> So while the
+      residential purchase argument got harder in January, <b>the agricultural and commercial argument
+      did not change at all.</b> That is the half of the market almost every residential-focused
+      installer is not equipped to serve &mdash; and you are a licensed electrical and general
+      contractor, which is exactly what a packing shed needs.</p>
+      <p><b>The buyer is different and better.</b> A farm business owner buys on payback arithmetic
+      rather than feelings, decides faster, signs bigger, and does not need persuading that energy is
+      a real cost.</p>
+    </div>
+
+    <div class="warn">
+      <div class="lab">Sun and wind in the same place</div>
+      <p>You told us central Washington has both strong sun and strong wind, and that this is why
+      you looked at wind in 2007. <b>That combination is genuinely unusual and it is the whole basis
+      of the rebrand.</b></p>
+      <p>Most installers in the country can sell one or the other. <b>Being able to walk a property
+      and honestly recommend solar, wind, storage or a combination of the three is a position no
+      competitor on the list above can occupy</b> &mdash; and it works best exactly where you are:
+      rural properties, farm buildings, and off-grid sites where the grid connection is expensive or
+      unreliable.</p>
+      <p><b>The caution we gave you stands.</b> Code and permitting is what stopped wind for you in
+      2007 and it is county-level. Confirm the position for each county before October, because the
+      marketing for it should not be built until the permitting is certain.</p>
+    </div>
+
+    <div class="warn">
+      <div class="lab">Two things that make this market harder, said plainly</div>
+      <ul>
+        <li><b>Washington is not a high-electricity-price state overall.</b> At around 15 cents your customers pay less than California, so payback periods are naturally longer and the emotional urgency is lower. That is why <b>storage and outage resilience</b> often sell better here than pure bill savings.</li>
+        <li><b>Your counties are geographically large and thinly populated compared with a metro market.</b> Yakima, Kittitas, Klickitat, Benton and Franklin cover an enormous area. That is good for competition &mdash; there is far less of it than in Seattle or Portland &mdash; but it means <b>drive time is a real cost</b>, and advertising should be aimed county by county rather than sprayed across all five.</li>
+      </ul>
+      <p><b>Both of these argue for the same thing:</b> fewer, better-qualified enquiries with the
+      county and the property type known before anyone gets in a van. Which is precisely what the
+      enquiry form in the audit is for.</p>
+    </div>
+
+    <div class="win">
+      <div class="lab">And one thing sitting outside your own front door</div>
+      <p><b>You mentioned you have no proper signage at the new premises on South 1st Street, and that
+      roughly 35,000 cars a day pass it.</b></p>
+      <p>That is the cheapest media buy available to you and you already own the position. <b>A sign is
+      a one-off cost with no monthly fee, no bidding, and no platform between you and the audience</b>
+      &mdash; and it reinforces every other channel, because people who have seen your name on the
+      street click your ad more readily than people who have not.</p>
+      <p><b>We would do this before spending anything on advertising.</b> The traffic figure is yours
+      and we have not verified it, but even at a fraction of that number it is the best value
+      impression you can buy in Yakima.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">Where You Win, And Where You Do Not</div>
+    <table class="cmp">
+      <tr><th>&nbsp;</th><th>You</th><th>The firms that collapsed</th><th>The locals still trading</th></tr>
+      <tr class="you"><td><b>Years in the market</b></td><td><b>47 &mdash; since 1979</b></td><td>Under a decade</td><td>Mostly newer than you</td></tr>
+      <tr><td><b>Electrical licence</b></td><td><b>Yes &mdash; electrical and general contractor</b></td><td>Sales-led, subcontracted</td><td>Some, not all</td></tr>
+      <tr><td><b>Can service an orphaned system</b></td><td><b>Yes</b></td><td>No longer exist</td><td>Some can, none are marketing it</td></tr>
+      <tr><td><b>Wind capability</b></td><td><b>Re-entering Oct 2026</b></td><td>No</td><td>No</td></tr>
+      <tr><td><b>Reputation risk</b></td><td><b>None found</b></td><td>Class actions, elderly-customer complaints, L&amp;I violations</td><td>Not assessed</td></tr>
+      <tr><td><b>Website that converts</b></td><td class="no">No form on any page</td><td>&mdash;</td><td>Several are better than yours</td></tr>
+      <tr><td><b>Visible reviews</b></td><td class="no">No rating shown on your site</td><td>&mdash;</td><td>Smart Solar leads on awards</td></tr>
+      <tr><td><b>Paid advertising</b></td><td class="no">None running</td><td>&mdash;</td><td>Unknown</td></tr>
+    </table>
+    <p class="oppnote"><b>Read the bottom four rows.</b> Every one of your disadvantages is a marketing
+    problem rather than a business problem &mdash; and all four are fixable in weeks. Every one of your
+    advantages took decades to build and cannot be copied.</p>
+  </section>
+
+  <section>
+    <div class="h">The Positioning This Points To</div>
+    <div class="win">
+      <div class="lab">One sentence, and it is defensible</div>
+      <p style="font-size:17px;color:var(--ink)"><b>&ldquo;The companies that sold hard and left are
+      gone. This company has been in Yakima since 1979, we are licensed electricians, and we will
+      still be here when your system needs looking at.&rdquo;</b></p>
+      <p><b>Note what that line does not say.</b> You told us plainly you do not want to advertise
+      being the biggest or the baddest &mdash; you want to be <i>the best and the most memorable</i>,
+      a company that stood the test of time and came out progressive. <b>Nothing above asks you to be
+      loud.</b> It asks that the people already looking for what you do can find you.</p>
+      <p>That line does three jobs at once: it separates you from the operators who damaged the
+      industry's reputation locally, it speaks directly to the customers they stranded, and it makes
+      your age &mdash; the thing you cannot change &mdash; the reason to choose you.</p>
+      <p><b>It is also the honest position</b>, which matters, because Solgen's customers have already
+      been sold to dishonestly once and will recognise it instantly if it happens again.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">What We Would Run First</div>
+    <ul class="road">
+      <li><b>Orphaned system rescue</b> &mdash; the stranded Solgen and Lumio customers. Fastest money, zero competition, no tax credit needed</li>
+      <li><b>Commercial and agricultural</b> &mdash; Section 48E survives to 2032, and the Yakima Valley is full of large electricity users</li>
+      <li><b>Battery and backup</b> &mdash; sold on outages, not on payback</li>
+      <li><b>Electrical work</b> &mdash; the steady floor that no solar policy change can touch</li>
+    </ul>
+    <p class="oppnote"><b>Notice what is not on that list: residential solar to new customers on a
+    cash purchase.</b> That is the one the credit change broke, and it is the one everybody else will
+    try to sell you. We would come back to it once the four above are running.</p>
+  </section>
+
+  <div class="cta">
+    <h2>Your two biggest competitors went bankrupt and left you their customers.</h2>
+    <p>Nobody is talking to those people. You are the licensed local firm that has been here since
+    1979. That is the campaign.</p>
+  </div>
+</div>
+
+<footer>
+  Prepared by Andrei Givero &middot; AG1 Consulting &middot; 30 August 2026<br>
+  For Paul Comiskey of AllCities Solar Power+, Yakima, Washington. <b>Solgen, Purelight, Lumio, Freedom Solar and Revolution Solar were named by you on our calls as competitors, and the figures of roughly 2,000 stranded customers in your area, 15 made whole, and the $250,000 fine are your own account given on 29 August 2026 and have not been independently verified by us. We have not verified the trading status of Freedom Solar or Revolution Solar at all.</b> Statements about them are drawn from published
+  news reporting and public records accessed on 29&ndash;30 August 2026, including trade and regional
+  business press; <b>AG1 Consulting has not independently verified any court filing, and figures for
+  liabilities, creditor numbers, claim counts, sale values and closure dates are reported as published
+  by those sources and may be incomplete, superseded or inaccurate.</b> <b>Nothing in this document is
+  a statement of fact about the conduct of any named company, an allegation of wrongdoing, or legal
+  advice. References to lawsuits and regulatory inspections describe allegations and actions reported
+  in public sources; allegations are not findings, and where matters settled no admission is implied.
+  This document is commercial marketing context only.</b> <b>The electricity rate of approximately 15 cents per kWh and the reported Pacific Power rate increase request are drawn from public sources accessed on 30 August 2026, are subject to regulatory process and change, and must be confirmed before use in any advertising. Statements about agricultural electricity use, payback periods, drive time and market density are our general commercial opinion, not researched findings about your specific counties. The 35,000 vehicles per day figure is as you stated it and has not been verified.</b> <b>The competitor advertising comparison was produced by reading the publicly served page source of
+  each website on 30 August 2026 and identifying analytics, advertising and call-tracking tags. Tags
+  loaded after the page renders, server-side tagging, or campaigns pointed at pages we did not read
+  would not appear in that check, so absence of a tag is not proof that a company is not
+  advertising.</b> The list of competitors is compiled from public directories and search results, is
+  <b>not exhaustive, and their trading status, ownership, service areas, credentials and awards have
+  not been verified by us</b>. <b>Distances are approximate. Nothing here is a statement about the
+  quality of any competitor's work.</b> <b>References to Section 48E are general commercial context
+  and are NOT tax advice &mdash; AG1 Consulting is not qualified to give it and you must confirm any
+  tax position with a qualified CPA.</b> Your revenue, margin, job volume, average job value, crew
+  numbers, growth targets, rebrand plans and October 2026 wind timing are <b>as you stated them on our
+  call</b> and have not been independently verified. <b>No number of leads, jobs, customers or revenue
+  is promised or forecast anywhere in this document, and no outcome from any campaign described is
+  guaranteed.</b>
+</footer>
+</body></html>
