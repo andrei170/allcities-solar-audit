@@ -1,0 +1,263 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>All City Solar - The Four Campaigns - AG1 Consulting</title><style>
+:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--mut:#9aa7b4;--line:#2a3340;--accent:#2f81f7;
+  --good:#3fb950;--bad:#f85149;--gradF:#f85149;--gradD:#e8702a;--gradC:#d29922;--gradB:#3fb950;--gradA:#2ea043;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--mut);font-weight:600}
+header{padding:46px 0 28px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 400px at 70% -10%,rgba(47,129,247,.18),transparent)}
+h1{font-size:30px;font-weight:800;margin:10px 0 6px;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:15px}
+.hero{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin:34px 0 8px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}}
+.gradecard{border:1px solid var(--line);border-radius:18px;padding:26px;text-align:center;position:relative;overflow:hidden}
+.gc-F{background:linear-gradient(160deg,#2a1410,#1c2330)}.gc-D{background:linear-gradient(160deg,#2a1c10,#1c2330)}
+.gc-C{background:linear-gradient(160deg,#2a2410,#1c2330)}.gc-B{background:linear-gradient(160deg,#102a1a,#1c2330)}
+.bigletter{font-size:96px;font-weight:900;line-height:1;position:relative}
+.bl-F{color:var(--gradF);text-shadow:0 0 40px rgba(248,81,73,.45)}
+.bl-D{color:var(--gradD);text-shadow:0 0 40px rgba(232,112,42,.45)}
+.bl-C{color:var(--gradC);text-shadow:0 0 40px rgba(210,153,34,.45)}
+.score100{font-size:18px;color:var(--mut);margin-top:6px;position:relative}
+.heroread h2{font-size:21px;font-weight:800;margin-bottom:10px}
+.heroread p{color:var(--mut);font-size:15.5px}
+.heroread .tag{display:inline-block;margin-top:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--ink);background:var(--panel)}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+.h{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.row{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.rname{font-weight:600;font-size:15px}
+.bar{height:7px;background:#0b0f15;border-radius:99px;margin-top:9px;overflow:hidden}
+.fill{height:100%;border-radius:99px}
+.badge{font-weight:800;font-size:15px;min-width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#0d1117}
+.gF{background:var(--gradF)}.gD{background:var(--gradD)}.gC{background:var(--gradC)}.gB{background:var(--gradB);color:#06210f}.gA{background:var(--gradA);color:#06210f}
+.sc{font-size:12px;color:var(--mut);margin-top:3px}
+.flag{background:linear-gradient(160deg,#2a1410,#161b22);border:1px solid #6f2a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.flag .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--bad);font-weight:700;margin-bottom:8px}
+.win{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.win .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--good);font-weight:700;margin-bottom:8px}
+.warn{background:linear-gradient(160deg,#2a2410,#161b22);border:1px solid #6f5a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.warn .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--gradC);font-weight:700;margin-bottom:8px}
+.flag p,.win p,.warn p{color:var(--mut);font-size:14.5px;margin-bottom:9px}
+.flag p:last-child,.win p:last-child,.warn p:last-child{margin-bottom:0}
+.flag b,.win b,.warn b{color:var(--ink)}
+.flag ul,.win ul,.warn ul{margin:0 0 9px 20px;color:var(--mut);font-size:14.5px}
+.flag li,.win li,.warn li{margin-bottom:6px}
+.code{background:#0b0f15;border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;line-height:1.85;color:var(--mut);overflow-x:auto}
+.code .ph{color:#ff9d94;font-weight:700}.code .ok{color:#84e0a8;font-weight:700}.code .c{color:#5b6672}
+.cmp{width:100%;border-collapse:collapse;font-size:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.cmp th{text-align:left;padding:11px 14px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);border-bottom:1px solid var(--line);font-weight:700}
+.cmp td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--mut);vertical-align:top}
+.cmp tr:last-child td{border-bottom:none}.cmp td b{color:var(--ink)}.cmp tr.you td{background:#241a12}
+.cmp .yes{color:var(--good);font-weight:700}.cmp .no{color:var(--bad);font-weight:700}
+.opp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){.opp{grid-template-columns:1fr}}
+.ocard{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px;text-align:center}
+.ocard .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
+.ocard .big{font-size:30px;font-weight:900;color:var(--good);margin:8px 0 2px}
+.ocard .small{font-size:13px;color:var(--mut)}
+.oppnote{color:var(--mut);font-size:14px;margin-top:14px}.oppnote b{color:var(--ink)}
+.arrow{display:flex;align-items:center;justify-content:center;gap:18px;margin:6px 0 2px;flex-wrap:wrap}
+.pill{font-size:60px;font-weight:900;line-height:1}
+.pill.from-F{color:var(--gradF)}.pill.from-D{color:var(--gradD)}.pill.from-C{color:var(--gradC)}
+.pill.to{color:var(--gradA)}
+.pilllab{font-size:12px;color:var(--mut);text-align:center;text-transform:uppercase;letter-spacing:.1em}
+.ar{font-size:34px;color:var(--mut)}
+ul.road{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:760px){ul.road{grid-template-columns:1fr}}
+ul.road li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:11px 14px;font-size:14.5px}
+.road2 li{border-left-color:var(--good)}
+.cta{text-align:center;padding:40px 0 56px}
+.cta h2{font-size:22px;font-weight:800;margin-bottom:8px}
+.cta p{color:var(--mut);font-size:15px}
+footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;line-height:1.7}
+.gscale{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 20px;margin-top:16px}
+.gscale .gtitle{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut);font-weight:700;margin-bottom:26px;text-align:center}
+.gtrack{position:relative;height:14px;border-radius:8px;background:linear-gradient(90deg,#f85149 0%,#f85149 18%,#e3833c 34%,#d4a72c 52%,#7ec46a 74%,#3fb950 100%);margin:0 4px}
+.gmark{position:absolute;top:-46px;transform:translateX(-50%);text-align:center;white-space:nowrap}
+.gmark .gm-lab{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);font-weight:700}
+.gmark .gm-val{font-size:19px;font-weight:900;line-height:1.15}
+.gmark:after{content:"";position:absolute;left:50%;top:100%;width:2px;height:22px;transform:translateX(-50%);background:currentColor;opacity:.75}
+.gmark.now{color:var(--bad)}.gmark.now .gm-val{color:var(--bad)}
+.gmark.proj{color:var(--good)}.gmark.proj .gm-val{color:var(--good)}
+.gmark.proj{top:auto;bottom:-52px}
+.gmark.proj:after{top:auto;bottom:100%}
+.gdot{position:absolute;top:50%;width:16px;height:16px;border-radius:50%;transform:translate(-50%,-50%);border:3px solid #0d1117}
+.gdot.now{background:var(--bad)}.gdot.proj{background:var(--good)}
+.gticks{display:flex;justify-content:space-between;margin:66px 4px 0;font-size:11px;letter-spacing:.08em;color:var(--mut);font-weight:700}
+@media(max-width:620px){.gmark .gm-lab{font-size:9px}.gmark .gm-val{font-size:16px}}
+</style></head><body>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Campaign Plan &middot; prepared for the onboarding call</div>
+    <h1>All City Solar &mdash; The Four Campaigns, And Which Two We Would Run</h1>
+    <div class="sub">Prepared for Paul Comiskey &middot; Yakima, Washington &middot; AG1 Consulting</div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="gradecard gc-C">
+      <div class="bigletter bl-C">Oct</div>
+      <div class="score100">wind season<br>returns</div>
+    </div>
+    <div class="heroread">
+      <h2>This was the call. Here is what was on it.</h2>
+      <p><b>We had the onboarding booked and you could not make it</b> &mdash; which happens, and it is
+      not a problem. <b>But the work was already done, so rather than let it sit in a folder, here it
+      is.</b></p>
+      <p><b>Four campaigns, ranked, with the two we would actually run and the reason we would leave
+      the other two alone for now.</b> Plus the two ideas you brought, which are better than you think
+      and are not phase one.</p>
+      <span class="tag">Yakima &middot; trading since 1979 &middot; licensed electrical &middot; wind, solar and storage</span>
+    </div>
+  </div>
+
+  <section>
+    <div class="h">The Constraint That Decides Everything</div>
+    <div class="flag">
+      <div class="lab">Starter package &mdash; what the budget actually buys</div>
+      <div class="code">Management fee        <span class="c">$1,250 / month</span>
+Ad spend              <span class="c">$1,250 / month  &rarr; paid to the platform</span>
+
+Campaigns you can run properly    <span class="ok">two</span>
+Campaigns you could run badly     <span class="ph">four</span></div>
+      <p><b>At $1,250 of spend you can run two campaigns properly or four campaigns badly.</b> Split
+      four ways, each gets roughly $300 a month, and none of them ever gathers enough data to learn
+      anything.</p>
+      <p><b>So the order matters far more than the list.</b> Everything below is about which two go
+      first and why.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">Campaign One &mdash; Commercial And Agricultural</div>
+    <div class="win">
+      <div class="lab">60 to 70% of the budget. This is the one we would open on.</div>
+      <p><b>Section 48E runs to 2032.</b> The deadline pressure that is about to hit residential does
+      not apply here, which means you are not competing with panic and you are not discounting against
+      a clock.</p>
+      <p><b>Bigger jobs, fewer firms bidding, and your electrical licence is a genuine qualifier.</b>
+      Most residential solar outfits cannot touch commercial work. You can, and you have been able to
+      since 1979.</p>
+      <p><b>Who we would target:</b> farms, orchards, wineries, packing houses and light industrial
+      across the Valley. <b>Agricultural operations are the obvious ones</b> &mdash; irrigation pumps
+      run on power, power is their biggest controllable cost, and the credit is still there.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">Campaign Two &mdash; Power Storage</div>
+    <div class="win">
+      <div class="lab">30 to 40% of the budget, and the reason people buy it is not what you think</div>
+      <p><b>Storage keeps the full federal credit.</b> That alone makes it the strongest residential
+      offer you have left.</p>
+      <p><b>But in your market the buying reason is not money at all. It is the well.</b> No power
+      means no water &mdash; for the house, for the livestock, for the stock tank. <b>That is a
+      fear-of-loss sale, not a savings sale</b>, and it converts completely differently. Nobody
+      calculates a payback period on running water.</p>
+      <p><b>The same applies to medical need.</b> Anybody on oxygen, refrigerated medication or a
+      powered bed is not buying an energy product, they are buying certainty.</p>
+      <p><b>Nobody sells storage this way in your market.</b> They all sell it on bill savings, which
+      is the weakest argument available.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">Campaigns Three And Four &mdash; And Why They Wait</div>
+    <div class="flag">
+      <div class="lab">Both are good. Neither is first.</div>
+      <p><b>Electrical work keeps crews busy and every panel upgrade is a future solar lead.</b> It is
+      genuinely valuable and it is the smartest long game in your business. <b>But it does not need
+      paid traffic to fill a diary yet</b>, and spending against it now would take budget from the two
+      campaigns that open new ground.</p>
+      <p><b>Orphan system rescue is the one everybody would tell you to run, and we would not.</b>
+      Solgen and Lumio going under left a very large number of homeowners in your region with nobody to
+      call &mdash; on our call we put that somewhere between twenty-five and fifty thousand.</p>
+      <p><b>You told us yourself why it does not work yet: service is low margin, and doing it properly
+      needs two people at around sixty percent of their time.</b> Advertising into that before the team
+      exists would create a problem rather than solve one. <b>You would be buying obligations, not
+      customers.</b></p>
+      <p><b>It stays on the list.</b> When there are two people who can run it, it becomes one of the
+      best assets you have &mdash; because those homeowners already own systems, already need service,
+      and already know their original installer is gone.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">Your Two Ideas &mdash; Both Good, Both Phase Two</div>
+    <div class="win">
+      <div class="lab">Willy Wind and the live production meter</div>
+      <p><b>The live production meter is the better of the two and it is genuinely unusual.</b> A real
+      number from a real system, updating, in public. <b>That is proof rather than a claim</b>, and
+      absolutely nobody in your market is doing anything like it. Every competitor is making assertions
+      about output. You would be publishing yours.</p>
+      <p><b>Willy Wind is a brand asset and it is a fair instinct.</b> Solar advertising is relentlessly
+      serious and being the memorable one in a boring category is a real advantage over years.</p>
+      <p><b>Both build brand, and brand needs traffic pointed at it first.</b> At $1,250 a month the
+      first job is finding out which of the two campaigns actually pays. <b>Once that is known, these
+      are where the next money goes.</b></p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">Why The Timing Actually Matters</div>
+    <div class="flag">
+      <div class="lab">Three clocks, none of which we control</div>
+      <p><b>Wind season returns in October.</b> That is the part of your business nobody else in the
+      Valley can do at all, and it has a season. Campaigns need a few weeks to get out of the learning
+      phase before they are worth judging, <b>which means starting in October is already starting
+      late.</b></p>
+      <p><b>Ellensburg Solar is already doing this.</b> You told us their post-sale reputation is poor
+      enough that their own customers ring you for help &mdash; but their digital marketing is good.
+      Tracking, town-specific pages, the lot. <b>Every month that stays true, they take more of the
+      orphaned Solgen and Lumio customers than you do</b>, and they are not better than you at the
+      work.</p>
+      <p><b>And the residential credit position is changing.</b> The maths a homeowner runs is not the
+      maths they ran last year. <b>The first company in Yakima to explain the new position clearly and
+      honestly wins</b>, and that window closes as soon as somebody else does it.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">What Was Going To Happen On The Call</div>
+    <div class="grid">
+      <div class="row"><div><div class="rname">Website overhaul begins</div><div class="sc">Enquiry form, bill upload, conversion tracking, the incentives page and county pages. One-off, already agreed.</div></div><div class="badge gA">READY</div></div>
+      <div class="row"><div><div class="rname">Campaign one built</div><div class="sc">Commercial and agricultural. Targeting, copy, landing page.</div></div><div class="badge gA">READY</div></div>
+      <div class="row"><div><div class="rname">Campaign two built</div><div class="sc">Power storage, sold on wells and certainty rather than savings.</div></div><div class="badge gA">READY</div></div>
+      <div class="row"><div><div class="rname">Tracking installed</div><div class="sc">So that from day one you can see which campaign produces jobs rather than guessing.</div></div><div class="badge gA">READY</div></div>
+      <div class="row"><div><div class="rname">90 day review booked</div><div class="sc">To decide whether to scale, hold or change direction on evidence.</div></div><div class="badge gA">READY</div></div>
+    </div>
+    <p class="oppnote"><b>All of that is built and waiting.</b> It does not expire and we are not going
+    anywhere. <b>But October does not wait, and neither does Ellensburg.</b></p>
+  </section>
+
+  <div class="cta">
+    <h2>Twenty minutes and we start.</h2>
+    <p>Everything above is done. <b>The only thing standing between it and being live is the call you
+    could not make</b> &mdash; and we will happily do it at whatever hour actually suits you.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p>Prepared by Andrei Givero &middot; AG1 Consulting</p>
+    <p>For Paul Comiskey of All City Solar, Yakima, Washington.
+    <b>The campaigns described here are proposals for discussion, not a commitment to run any
+    particular campaign</b>, and which of them are viable would depend on actual search and audience
+    volume in your area, which we have not measured. <b>The figures for budget split are the Starter
+    package as discussed on our call of 30 August 2026; ad spend is paid to the advertising platform,
+    is not AG1 revenue, and we take no percentage of it.</b> <b>Statements about Solgen, Lumio and
+    Ellensburg Solar, the number of affected homeowners, the wind season and your own capacity are
+    taken from what you told us on our calls and have not been independently verified by AG1</b> &mdash;
+    if any of it is wrong, please correct us and we will revise this. Nothing here is a statement about
+    any named company's actual trading, service quality or financial position. <b>Tax credit references
+    are general and are not tax advice; your customers should take their own.</b> <b>No claim,
+    forecast or guarantee is made or implied about what any of this work would produce in leads, jobs
+    or revenue.</b> Company names and trade marks belong to their respective owners and are used for
+    identification only.</p>
+  </div>
+</footer>
+</body></html>
