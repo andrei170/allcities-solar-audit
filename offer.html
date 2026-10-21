@@ -130,7 +130,7 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
 .fitem{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--good);border-radius:10px;padding:13px 15px}
 .fitem .ft{font-weight:700;font-size:14.5px;color:var(--ink);margin-bottom:4px}.fitem .fw{font-size:13.5px;color:var(--mut)}.fitem .fw b{color:var(--ink)}
 .fgroup{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);font-weight:700;margin:20px 0 10px}
-.plist li.x{color:#6b7682;text-decoration:line-through}
+.plist li.x{color:#6b7682;text-decoration:line-through}.plist li.x::before,.plist li.x::marker{filter:grayscale(1);opacity:.35}
 .pcard.feat{border-color:#7cc63a;box-shadow:0 0 0 1px #7cc63a,0 10px 40px rgba(124,198,58,.15)}
 .pribbon{background:#7cc63a !important;color:#0b1408 !important}
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}@media(max-width:760px){.steps{grid-template-columns:1fr}}
